@@ -46,17 +46,7 @@ function Hero() {
         
           <div>
             <div className="hero-info">
-    
-              <div className="hero-left">
-                <h6 className="hero-titles">{t("hero.hero-titles")} - 3</h6>
-                <h1 className="hero-title">{t("hero.hero-title")} 3</h1>
-                <p className="hero-text">{t("hero.hero-text")}</p> 
-                <button className="hero-btn">{t("hero.hero-btn")}</button>
-              </div>
-              {/* O'ng tomondagi rasm */}
-              <div className="hero-right">
-                <img src="rasm_manzili_3.jpg" alt="Slide 3" className="hero-img" />
-              </div>
+             <img src="src/Components/Hero/img/herro2.jpg" alt="rasm" />
             </div>
           </div>
 
