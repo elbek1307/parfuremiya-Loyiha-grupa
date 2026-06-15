@@ -140,43 +140,53 @@
   display: none !important;
 }
 
+/* ==========================================================================
+   8. RESPONSIVE (MOBIL VA KICHIK TELEFONLAR UCHUN MOSLASHUVCHANLIK)
+   ========================================================================== */
 @media (max-width: 768px) {
-  /* Barcha slaydlar telefon ekranida bir xil qat'iy balandlikda tursin (Masalan: 400px) */
+  /* Barcha slaydlar telefon ekranida bir xil qat'iy balandlikda tursin */
   .hero-slide-item {
-    height: 420px !important; 
+    height: 450px !important; 
     position: relative;
     box-sizing: border-box;
   }
   
-  /* 1-slayd ichidagi matn va fon joylashuvi */
+  /* 1-slayd ichidagi kontentni tartiblash */
   .first-slide {
     flex-direction: column-reverse;
     align-items: center;
-    justify-content: flex-start; /* Matnlarni rasm tagidan tartib bilan boshlaydi */
-    padding-top: 180px; /* Rasm uchun yuqoridan joy ochamiz */
+    justify-content: flex-start; 
+    padding-top: 200px; /* Rasm uchun tepadan joy */
     box-sizing: border-box;
   }
 
-  /* 1-slaydning orqa foni: matnga halaqit bermay tepada 100% yoyilib turadi */
+  /* 1-slaydning o'ng foni: kichik ekranda ham chekka urilib qolmaydi */
   .hero-absolute-bg {
     width: calc(100% + 40px) !important;
     right: -20px;
-    height: 180px; /* Rasmning mobil balandligi */
-    background-position: center;
+    height: 200px; /* Rasm balandligi */
+    background-position: center right;
     top: 0;
   }
 
-  /* Chap tomondagi matnlar blokining stili */
+  /* Chap tomondagi matnlar bloki */
   .hero-left-content {
     max-width: 100%;
     text-align: center;
-    padding: 15px 10px 0 10px;
+    padding: 10px 5px 0 5px;
     box-sizing: border-box;
   }
 
+  .hero-sub-subtitle {
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin: 0 0 8px 0;
+  }
+
   .hero-title {
-    font-size: 26px; /* Telefonda sarlavha chiroyli sig'ishi uchun */
-    margin: 0 0 10px 0;
+    font-size: 28px; /* O'rtacha telefonlar uchun */
+    margin: 0 0 12px 0;
+    line-height: 1.2;
   }
 
   .hero-text {
@@ -189,32 +199,69 @@
     align-self: center;
     width: 100%;
     padding: 12px 0;
+    font-size: 14px;
   }
 
-  /* Ikonkalar pastda rasm ustida emas, matn tagida chiroyli turadi */
+  /* Ikonkalar pastda silliq qatorda turadi */
   .hero-right-socials {
     flex-direction: row;
     justify-content: center;
     padding-right: 0;
     margin: 15px 0 0 0;
-    gap: 30px;
+    gap: 25px;
   }
 
-  /* ==========================================================================
-     MANA SHU QATOR 2- VA 3-SLAYD RASMLARINI TO'LIQ BALANDLIKDA USHLAYDI
-     ========================================================================== */
+  /* 2- VA 3-SLAYD RASMLARI TO'LIQ BALANDLIKDA */
   .hero-full-width-img {
     height: 100% !important;
     width: 100% !important;
-    object-fit: cover; /* Rasm siqilib xunuk bo'lib qolmaydi, maydonni to'liq qoplaydi */
+    object-fit: cover; /* Rasm sifati buzilmay to'liq qoplaydi */
     border-radius: 4px;
   }
 
-  /* Slayder nuqtalari (dots) */
+  /* Nuqtalar (Dots) */
   .slick-dots {
     left: 0 !important;
     right: 0 !important;
     text-align: center !important;
     bottom: 5px !important;
+  }
+}
+
+/* ==========================================================================
+   9. JUDA KICHIK TELEFONLAR UCHUN (Kengligi 400px dan kichik ekranlar)
+   ========================================================================== */
+@media (max-width: 400px) {
+  .hero-slide-item {
+    height: 430px !important; /* Ekran juda kichikligi uchun balandlikni sal qisqartirdik */
+  }
+
+  .first-slide {
+    padding-top: 170px; /* Rasm maydonini moslashtirish */
+  }
+
+  .hero-absolute-bg {
+    height: 170px;
+  }
+
+  .hero-title {
+    font-size: 22px; /* Sarlavha kichik ekranda 2 qatorga chiroyli sig'ishi uchun */
+    margin: 0 0 8px 0;
+  }
+
+  .hero-text {
+    font-size: 12px; /* Matn o'qishga qulay va ixcham */
+    line-height: 1.35;
+    margin: 0 0 15px 0;
+  }
+
+  .hero-btn {
+    padding: 10px 0;
+    font-size: 13px;
+  }
+  
+  .hero-right-socials {
+    margin: 10px 0 0 0;
+    gap: 20px;
   }
 }
