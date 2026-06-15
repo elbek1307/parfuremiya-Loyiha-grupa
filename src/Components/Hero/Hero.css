@@ -140,11 +140,7 @@
   display: none !important;
 }
 
-/* ==========================================================================
-   8. RESPONSIVE (MOBIL VA KICHIK TELEFONLAR UCHUN MOSLASHUVCHANLIK)
-   ========================================================================== */
 @media (max-width: 768px) {
-  /* Barcha slaydlar telefon ekranida bir xil qat'iy balandlikda tursin */
   .hero-slide-item {
     height: 450px !important; 
     position: relative;
