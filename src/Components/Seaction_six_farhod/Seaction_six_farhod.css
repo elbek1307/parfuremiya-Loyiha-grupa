@@ -98,6 +98,7 @@
   display: flex;
   justify-content: center;
   margin-top: 60px;
+ 
 }
 
 .team-footer-btn {
@@ -110,12 +111,13 @@
   cursor: pointer;
   border-radius: 4px;
   transition: all 0.3s ease;
+  border: 1px solid white;
 }
 
 .team-footer-btn:hover {
   background-color: var(--main-color);
-  color: #fff;
   border-style: solid;
+  border-color: rgb(194, 96, 96);
 }
 
 @media (max-width: 1150px) {

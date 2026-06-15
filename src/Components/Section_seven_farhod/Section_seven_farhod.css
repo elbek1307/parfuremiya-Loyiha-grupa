@@ -73,14 +73,16 @@
   font-size: 15px;
   font-weight: 400;
   cursor: pointer;
-  border-radius: 2px;
+  border-radius: 6px;
   transition: all 0.2s ease;
+  border: 1px solid white;
 }
 
 /* Sichqoncha kelgandagi effekt */
 .news-footer-btn:hover {
   background-color: var(--main-color);
-  color: #fff;
+  color: #853939;
+  border-color: #853939;
 }
 
 /* --- Responsive (Ekran o'lchamiga moslashuv) --- */
