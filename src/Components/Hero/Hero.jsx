@@ -23,16 +23,15 @@ function Hero() {
           
           <div>
             <div className="hero-info">
-              {/* Chap tomondagi matnlar */}
               <div className="hero-left">
                 <h6 className="hero-titles">{t("hero.hero-titles")} - 1</h6>
                 <h1 className="hero-title">{t("hero.hero-title")} 1</h1>
                 <p className="hero-text">{t("hero.hero-text")}</p> 
                 <button className="hero-btn">{t("hero.hero-btn")}</button>
               </div>
-              {/* O'ng tomondagi rasm */}
+          
               <div className="hero-right">
-                <img src="src/Components/Hero/img/heroi.jpg" alt="Slide 1" className="hero-img" />
+                <img src="src/Components/Hero/img/heroi.jpg" alt="rasm" />
               </div>
             </div>
           </div>

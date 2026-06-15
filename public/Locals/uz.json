@@ -1,4 +1,10 @@
 {
+    "hero": {
+  "hero-titles": "LEANGROUP - tubalar va yorliqlar",
+  "hero-title": "Laminatlangan tubalar",
+  "hero-text": "Tish pastalari ishlab chiqarishda ishlatiladi. Kosmetika, oziq-ovqat sanoati, paratsevtika, maishiy kimyo va DIY (Do-it-Yourself — o'zingiz bajaring) sohalarida keng qo'llaniladi.",
+  "hero-btn": "Katalog"
+},
     "team": [
         {
             "name": "Voynich Darya",
