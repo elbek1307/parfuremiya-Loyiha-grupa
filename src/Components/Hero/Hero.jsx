@@ -1,10 +1,13 @@
 import { useTranslation } from "react-i18next";
 import "./Hero.css";
 import React from 'react'
-import Slider from "react-slick";
+import SliderPackage from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import heroi from "./img/heroi.jpg";
+import hero11 from "./img/hero11.jpg";
+import herro2 from "./img/herro2.jpg";
+const Slider = SliderPackage.default || SliderPackage
 function Hero() {
   const {t, i18n} = useTranslation();
    const settings = {
@@ -31,21 +34,21 @@ function Hero() {
               </div>
           
               <div className="hero-right">
-                <img src="src/Components/Hero/img/heroi.jpg" alt="rasm" />
+                <img src="/img/heroi.jpg" alt="rasm" />
               </div>
             </div>
           </div>
 
           <div>
             <div className="hero-info">
-             <img src="src/Components/Hero/img/hero11.jpg" alt="rasm" />
+             <img src="/img/hero11.jpg" alt="rasm" />
             </div>
           </div>
 
         
           <div>
             <div className="hero-info">
-             <img src="src/Components/Hero/img/herro2.jpg" alt="rasm" />
+             <img src="/img/herro2.jpg" alt="rasm" />
             </div>
           </div>
 
