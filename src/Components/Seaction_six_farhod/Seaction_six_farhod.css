@@ -1,0 +1,112 @@
+/* :root o'zgaruvchilaringiz bilan moslashtirilgan stillar */
+
+.team-container {
+  max-w: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  /* Rasmdagi shrift uslubiga yaqinroq */
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif; 
+}
+
+/* Sarlavha qismi */
+.team-title {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--text-color); /* #2C2D2E */
+}
+
+.team-title span {
+  color: var(--main-color); /* #EF7C00 */
+}
+
+/* 5 ta xodimni rasmdagidek tekis joylashtirish */
+.team-grid {
+  display: grid;
+  grid-template-cols: repeat(5, 1fr);
+  gap: 30px;
+}
+
+/* Har bir xodim kartochkasi */
+.team-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Dumaloq rasm konteyneri */
+.image-wrapper {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  /* Rasm orqasidagi och ko'k/kulrang gradient effekt (rasmdagidek) */
+  background: linear-gradient(180deg, #f0f4f8 0%, #e2e8f0 100%); 
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Ism va Familiya */
+.member-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-color); /* #2C2D2E */
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+/* Lavozim (Och kulrang matn) */
+.member-position {
+  font-size: 14px;
+  color: var(--text2-color); /* #919399 */
+  margin-bottom: 14px;
+  min-height: 42px; /* Lavozimlar matni uzun bo'lsa ham kontaktlar bir xil chiziqda turadi */
+  line-height: 1.4;
+}
+
+/* Kontaktlar qismi */
+.member-contacts {
+  font-size: 13px;
+  color: var(--text-color); /* #2C2D2E */
+  line-height: 1.6;
+}
+
+/* Email manzili */
+.member-email {
+  display: inline-block;
+  margin-top: 4px;
+  color: var(--text-color);
+  transition: color 0.2s ease;
+}
+
+.member-email:hover {
+  color: var(--main-color); /* Sichqoncha olib borilganda asosiy rangga o'tadi */
+  text-decoration: underline;
+}
+
+/* --- Ekran o'lchamiga qarab moslashuvchanlik (Responsiveness) --- */
+@media (max-width: 1100px) {
+  .team-grid {
+    grid-template-cols: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-grid {
+    grid-template-cols: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .team-grid {
+    grid-template-cols: 1fr;
+  }
+}
