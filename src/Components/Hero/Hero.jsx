@@ -9,12 +9,12 @@ function Hero() {
   const {t, i18n} = useTranslation();
    const settings = {
     dots: true,
-    speed: 800,         // Slayd yumshoq o'tishi uchun tezlik
+    speed: 800,         
     slidesToShow: 1,
     slidesToScroll: 1,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 3000, // Har 3 soniyada avtomatik o'tadi
+    autoplaySpeed: 3000, 
   };
   return (
     <div className="hero">

@@ -10,10 +10,11 @@ const App = () => {
   return (
     <>
 
-      <Hero />
+     
     <header>
       <Navbar />
     </header>
+    <Hero/>
     <Seaction_six_farhod/>
     <Section_seven_farhod/>
     <Footer />
