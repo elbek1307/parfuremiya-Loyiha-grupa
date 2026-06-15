@@ -1,14 +1,10 @@
-/* ==========================================================================
-   1. ASOSIY KONTEYNER TIZIMI
-   ========================================================================== */
+
 .hero {
   background-color: #ffffff; 
   padding: 40px 0;
   width: 100%;
-  overflow: hidden; /* O'ngga chiqib ketgan rasm saytni kengaytirib yubormasligi uchun */
+  overflow: hidden;
 }
-
-/* Slayderni chegaralab turuvchi asosiy konteyner */
 .hero .container {
   max-width: 1200px;
   margin: 0 auto;
