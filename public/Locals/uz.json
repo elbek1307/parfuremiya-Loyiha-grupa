@@ -8,9 +8,27 @@
         },
         {
             "name": "Misko Yekaterina",
-            "position": "Kuzatuv (qo'llab-quvvatlash) bo'limi boshlig'i",
+            "position": "Kuzatuv bo'limi boshlig'i",
             "phone": "+375 (17) 270-53-77 (115), +375 29 112-73-48",
             "email": "k.melnichenko@leangroup.by"
+        },
+        {
+            "name": "Ivanov Sergey",
+            "position": "Marketing bo'limi boshlig'i",
+            "phone": "+375 (17) 270-53-77 (210)",
+            "email": "s.ivanov@leangroup.by"
+        },
+        {
+            "name": "Petrova Anna",
+            "position": "Logistika bo'limi boshlig'i",
+            "phone": "+375 (17) 270-53-77 (415)",
+            "email": "a.petrova@leangroup.by"
+        },
+        {
+            "name": "Sidorov Pavel",
+            "position": "IT bo'limi boshlig'i",
+            "phone": "+375 (17) 270-53-77 (501)",
+            "email": "p.sidorov@leangroup.by"
         }
     ],
     "team_section": {

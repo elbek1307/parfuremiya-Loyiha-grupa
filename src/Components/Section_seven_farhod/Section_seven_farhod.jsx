@@ -10,19 +10,19 @@ const Section_seven_farhod = () => {
       id: 1,
       date: "28.01.2022",
       title: '"ЛеанГрупп" серебряный призер EcoVadis!',
-      img: "src/Components/Section_seven_farhod/img/news1.jpg"
+      img: "src/Components/Seaction_six_farhod/img/seven.jpg"
     },
     {
       id: 2,
       date: "21.01.2022",
       title: '"ЛеанГрупп" на выставке ПРОДЭКСПО-2022!',
-      img: "src/Components/Section_seven_farhod/img/news2.jpg"
+      img: "src/Components/Seaction_six_farhod/img/seven (2).jpg"
     },
     {
       id: 3,
       date: "16.12.2021",
       title: 'Туба, как вид упаковки',
-      img: "src/Components/Section_seven_farhod/img/news3.jpg"
+      img: "src/Components/Seaction_six_farhod/img/seven (3).jpg "
     }
   ];
 

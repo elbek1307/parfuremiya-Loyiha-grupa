@@ -2,12 +2,15 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import "./Seaction_six_farhod.css";
 
-const Section_news_farhod = () => {
+const Seaction_six_farhod = () => {
   const { t } = useTranslation();
 
   const teamMembers = [
-    { name: "Voynich Darya", position: t("team.0.position"), phone: "+375 (17) 270-53-77 (317)", email: "" },
-    { name: "Misko Yekaterina", position: t("team.1.position"), phone: "+375 (17) 270-53-77 (115), +375 29 112-73-48", email: "k.melnichenko@leangroup.by" }
+    { name: t("team.0.name"), position: t("team.0.position"), phone: t("team.0.phone"), email: t("team.0.email") },
+    { name: t("team.1.name"), position: t("team.1.position"), phone: t("team.1.phone"), email: t("team.1.email") },
+    { name: t("team.2.name"), position: t("team.2.position"), phone: t("team.2.phone"), email: t("team.2.email") },
+    { name: t("team.3.name"), position: t("team.3.position"), phone: t("team.3.phone"), email: t("team.3.email") },
+    { name: t("team.4.name"), position: t("team.4.position"), phone: t("team.4.phone"), email: t("team.4.email") }
   ];
 
   return (
@@ -18,7 +21,7 @@ const Section_news_farhod = () => {
         {teamMembers.map((member, index) => (
           <div key={index} className="team-card">
             <div className="image-wrapper">
-              <img src={`src/Components/Seaction_six_farhod/img/team${index + 1}.jpg`} alt={member.name} />
+              <img src={`src/Components/Seaction_six_farhod/img/${index + 1}.jpg`} alt={member.name} />
             </div>
             <span className="member-name">{member.name}</span>
             <p className="member-position">{member.position}</p>
@@ -39,4 +42,4 @@ const Section_news_farhod = () => {
   );
 };
 
-export default Section_news_farhod;
+export default Seaction_six_farhod;

@@ -11,6 +11,24 @@
             "position": "Head of Support Department",
             "phone": "+375 (17) 270-53-77 (115), +375 29 112-73-48",
             "email": "k.melnichenko@leangroup.by"
+        },
+        {
+            "name": "Ivanov Sergey",
+            "position": "Head of Marketing Department",
+            "phone": "+375 (17) 270-53-77 (210)",
+            "email": "s.ivanov@leangroup.by"
+        },
+        {
+            "name": "Petrova Anna",
+            "position": "Head of Logistics Department",
+            "phone": "+375 (17) 270-53-77 (415)",
+            "email": "a.petrova@leangroup.by"
+        },
+        {
+            "name": "Sidorov Pavel",
+            "position": "Head of IT Department",
+            "phone": "+375 (17) 270-53-77 (501)",
+            "email": "p.sidorov@leangroup.by"
         }
     ],
     "team_section": {
