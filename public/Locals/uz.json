@@ -1,0 +1,42 @@
+{
+    "team": [
+        {
+            "name": "Voynich Darya",
+            "position": "Sotuvlar bo'yicha direktor o'rinbosari",
+            "phone": "+375 (17) 270-53-77 (317)",
+            "email": ""
+        },
+        {
+            "name": "Misko Yekaterina",
+            "position": "Kuzatuv bo'limi boshlig'i",
+            "phone": "+375 (17) 270-53-77 (115), +375 29 112-73-48",
+            "email": "k.melnichenko@leangroup.by"
+        },
+        {
+            "name": "Ivanov Sergey",
+            "position": "Marketing bo'limi boshlig'i",
+            "phone": "+375 (17) 270-53-77 (210)",
+            "email": "s.ivanov@leangroup.by"
+        },
+        {
+            "name": "Petrova Anna",
+            "position": "Logistika bo'limi boshlig'i",
+            "phone": "+375 (17) 270-53-77 (415)",
+            "email": "a.petrova@leangroup.by"
+        },
+        {
+            "name": "Sidorov Pavel",
+            "position": "IT bo'limi boshlig'i",
+            "phone": "+375 (17) 270-53-77 (501)",
+            "email": "p.sidorov@leangroup.by"
+        }
+    ],
+    "team_section": {
+        "title": "Jamoa",
+        "button": "Barchasini ko'rish"
+    },
+    "news_section": {
+        "title": "Yangiliklar",
+        "button": "Barcha yangiliklar"
+    }
+}
