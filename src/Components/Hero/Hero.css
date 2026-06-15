@@ -5,7 +5,7 @@
   background-color: #ffffff; 
   padding: 40px 0;
   width: 100%;
-  overflow: hidden;
+  overflow: hidden; /* O'ngga chiqib ketgan rasm saytni kengaytirib yubormasligi uchun */
 }
 
 /* Slayderni chegaralab turuvchi asosiy konteyner */
@@ -13,7 +13,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  position: relative;
+  position: relative; /* Ichidagi rasm shunga nisbatan pozitsiya oladi */
   box-sizing: border-box;
 }
 
@@ -22,7 +22,7 @@
    ========================================================================== */
 .hero-slide-item {
   width: 100%;
-  height: 480px; /* Slayder standart balandligi */
+  height: 480px; 
   position: relative;
   box-sizing: border-box;
 }
@@ -35,27 +35,30 @@
 }
 
 /* ==========================================================================
-   3. BACKGROUND RASMNI ABSOLUTE QILISH (MATNNING TAGIDA TURISHI UCHUN)
+   3. BACKGROUND RASMNI O'NGGA 100% YORIB CHIQUVCHI QILISH (MUKAMMAL USUL)
    ========================================================================== */
 .hero-absolute-bg {
   position: absolute;
   top: 0;
-  right: 0;
-  width: 100%; /* Butun slaydni qoplaydi, left matnni tagiga ham o'tadi */
+  right: -20px; /* Konteynerning o'ng paddingini yopadi */
+  
+  /* Rasm chap tomondan matnning tagiga o'tadi, o'ng tomondan esa ekranning eng chekka qirg'og'igacha boradi */
+  width: calc(100% + (100vw - 100%) / 2); 
+  
   height: 100%;
   background-repeat: no-repeat;
-  background-size: contain; /* Sut va quvurlar kesilib ketmasligi uchun */
-  background-position: right center; /* Rasmni o'ng tomonga bog'laydi */
-  z-index: 1;
+  background-size: cover; /* Sut va quvurlar o'ng taraf chekkasini to'liq to'ldiradi */
+  background-position: center right; 
+  z-index: 1; /* Hamma narsaning tagida turadi */
 }
 
 /* ==========================================================================
-   4. CHAP TOMON: MATNLAR (Rasm ustida, chap chiziqda turadi)
+   4. CHAP TOMON: MATNLAR (Rasm ustida, chap chiziqda qat'iy turadi)
    ========================================================================== */
 .hero-left-content {
   position: relative;
-  z-index: 5; /* Rasm ustida ko'rinishi uchun */
-  max-width: 520px; /* Matn rasmga urilib ketmasligi uchun chegara */
+  z-index: 10; /* Rasm ustida (top-layer) ko'rinishi uchun yuqori z-index */
+  max-width: 520px; 
   width: 100%;
 }
 
@@ -87,7 +90,7 @@
 }
 
 .hero-btn {
-  background-color: #f39c12; /* To'q sariq katalog tugmasi */
+  background-color: #f39c12; 
   color: #ffffff;
   border: none;
   padding: 14px 45px;
@@ -102,10 +105,12 @@
   background-color: #e67e22;
 }
 
-/
+/* ==========================================================================
+   5. O'NG TOMONDAGI SOTSIAL TARMOQLAR
+   ========================================================================== */
 .hero-right-socials {
   position: relative;
-  z-index: 5; /* Rasm ustida turadi */
+  z-index: 10; /* Bu ham rasm ustida chiroyli turadi */
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -123,6 +128,10 @@
   color: #333333;
   transform: scale(1.2);
 }
+
+/* ==========================================================================
+   6. 2- VA 3-SLAYDLARNING ODDIY RASMLARI
+   ========================================================================== */
 .hero-full-width-img {
   width: 100%;
   height: 100%;
@@ -130,11 +139,15 @@
   border-radius: 6px;
 }
 
+/* ==========================================================================
+   7. SLIDER NUQTALARI (DOTS)
+   ========================================================================== */
 .slick-dots {
   bottom: 20px !important;
   left: 0 !important;
   text-align: left !important;
   width: auto !important;
+  z-index: 15;
 }
 
 .slick-dots li {
@@ -156,6 +169,9 @@
   display: none !important;
 }
 
+/* ==========================================================================
+   8. MOBIL QURILMALAR
+   ========================================================================== */
 @media (max-width: 768px) {
   .hero-slide-item {
     height: auto;
@@ -169,6 +185,8 @@
   }
 
   .hero-absolute-bg {
+    width: calc(100% + 40px);
+    right: -20px;
     height: 240px;
     background-position: center;
     top: 0;
