@@ -1,67 +1,50 @@
-import React, { useState } from 'react'
-import './Hero.css'
+import { useTranslation } from "react-i18next";
+import "./Hero.css";
+import React from 'react'
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-const Hero = () => {
-  const [dropdownOpen, setDropdownOpen] = useState(false)
-
+function Hero() {
+  const {t, i18n} = useTranslation();
+   const settings = {
+    dots: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 1000,
+  };
   return (
+    <div>
+      <h2>Carousel Component</h2>
+      <Slider {...settings}>
+        <div>
+          <h3>FIRST SLIDE</h3>
+        </div>
+        <div>
+          <h3>SECOND SLIDE</h3>
+        </div>
+        <div>
+          <h3>THIRD SLIDE</h3>
+        </div>
+        <div>
+          <h3>FORTH SLIDE</h3>
+        </div>
+      </Slider>
+    </div>
+    </div>
     <div className="hero">
-      {/* Background milk wave on right */}
-      <div className="hero-bg-wave"></div>
-
-      {/* Social icons right edge */}
-      <div className="social-icons">
-        <div className="social-icon">VK</div>
-        <div className="social-icon">f</div>
-        <div className="social-icon">in</div>
-      </div>
-
-      {/* Left content - Text content */}
-      <div className="hero-left">
-        {/* Dropdown menu */}
-        <div className="dropdown-menu">
-          <div className="dropdown-header" onClick={() => setDropdownOpen(!dropdownOpen)}>
-            <span className="dropdown-title">Laminat quvurlar</span>
-            <span className="dropdown-arrow">▼</span>
+      <div className="container">
+        <div className="hero-info">
+          <div className="hero-left">
+            <h6 className="hero-titles">{t("hero.hero-titles")}</h6>
+            <h1 className="hero-title">{t("hero.hero-title")}</h1>
+            <p className="hero-text">{t("hero.hero-title")}</p>
+            <button className="hero-btn">{t("hero.hero-btn")}</button>
           </div>
-          {dropdownOpen && (
-            <ul className="dropdown-list">
-              <li className="dropdown-item">Laminat quvurlar</li>
-              <li className="dropdown-item active">Extrusion tubes</li>
-              <li className="dropdown-item">Boshqa qadoqlash</li>
-            </ul>
-          )}
         </div>
-
-        {/* Subtitle */}
-        <p className="hero-subtitle">LEANGROUP - tubes and labels</p>
-
-        {/* Main title */}
-        <h1 className="hero-title">Laminate tubes</h1>
-
-        {/* Description */}
-        <p className="hero-description">
-          Used for the production of toothpastes.
-          <br />
-          Widely used in cosmetics segment, food industrial,
-          <br />
-          parapharmaceuticals, household chemicals and DIY (Do-It-Yourself).
-        </p>
-
-        {/* CTA Button */}
-        <button className="hero-btn">Katalog</button>
-
-        {/* Slider dots */}
-        <div className="slider-dots">
-          <span className="dot active"></span>
-          <span className="dot"></span>
-          <span className="dot"></span>
-        </div>
-      </div>
-
-      {/* Right content - Background Image */}
-      <div className="hero-right">
-        
       </div>
     </div>
   )
