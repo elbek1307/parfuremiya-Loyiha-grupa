@@ -1,0 +1,229 @@
+/* ==========================================================================
+   1. UMUMIY TUZILISH VA FON (HERO SECTION)
+   ========================================================================== */
+.hero {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.hero .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ==========================================================================
+   2. SLAYD ICHIDAGI FLEXBOX STRUKTURASI
+   ========================================================================== */
+.hero-info {
+  display: flex;
+  align-items: stretch; /* XATO TO'G'RILANDI: Slayd elementlari balandligini avtomat tenglashtiradi */
+  justify-content: space-between;
+  gap: 40px;
+  min-height: 450px; 
+  padding: 20px 0;
+}
+
+/* ==========================================================================
+   3. MATNLAR VA TIPOGRAFIKA (CHAP TOMON)
+   ========================================================================== */
+.hero-left {
+  flex: 1;
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Matnlar o'rtada turishi uchun */
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+.hero-titles {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #4a90e2;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 800;
+  color: #2c3e50;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  font-size: 16px;
+  color: #576574;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Tugma (Button) stili */
+.hero-btn {
+  background-color: #4a90e2;
+  color: #ffffff;
+  border: none;
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  align-self: flex-start; /* Tugma eni matn bo'yicha qisqarishi uchun */
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3);
+}
+
+.hero-btn:hover {
+  background-color: #357abd;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(74, 144, 226, 0.4);
+}
+
+/* ==========================================================================
+   4. 1-SLAYD UCHUN CSS BACKGROUND RASMI (O'NG TOMON)
+   ========================================================================== */
+.hero-right {
+  flex: 1;
+  min-height: 450px;  
+  width: 100%;
+  position: relative;
+}
+
+.hero-bg-img {
+  background-image: url("./Hero/img/heroi.jpg"); /* DIQQAT: Agar rasm chiqmasa, url("../Hero/img/heroi.jpg") qilib ko'ring */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100%;
+  min-height: 450px; /* Rasm blokining balandligini ta'minlaydi */
+}
+
+/* ==========================================================================
+   5. 2 VA 3-SLAYDLARDAGI RASMLARNI 100% QILISH
+   ========================================================================== */
+.hero2, .hero3 {
+  width: 100%;
+  height: 450px; 
+  object-fit: cover; 
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================================================================
+   6. SLICK SLIDER NUQTALARI (DOTS)
+   ========================================================================== */
+.slick-dots {
+  bottom: -30px !important;
+}
+
+.slick-dots li button:before {
+  font-size: 12px !important;
+  color: #4a90e2 !important;
+  opacity: 0.4;
+  transition: all 0.3s ease;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #4a90e2 !important;
+  opacity: 1;
+  transform: scale(1.3);
+}
+
+.slick-prev, .slick-next {
+  display: none !important;
+}
+
+/* ==========================================================================
+   7. ANIMATSIYALAR
+   ========================================================================== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==========================================================================
+   8. RESPONSIVE (MOBIL QURILMALAR UCHUN MOSLASHUVCHANLIK)
+   ========================================================================== */
+
+@media (max-width: 992px) {
+  .hero-info {
+    min-height: 380px;
+    gap: 20px;
+  }
+
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-right, .hero-bg-img, .hero2, .hero3 {
+    height: 380px;
+    min-height: 380px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 0;
+  }
+
+  .hero-info {
+    flex-direction: column; 
+    text-align: center;
+    min-height: auto;
+    gap: 30px;
+  }
+
+  .hero-btn {
+    align-self: center; /* Mobil ekranda tugma markazda turadi */
+  }
+
+  .hero-left {
+    max-width: 100%;
+  }
+
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .hero-text {
+    margin-bottom: 24px;
+  }
+
+  .hero-right, .hero-bg-img, .hero2, .hero3 {
+    height: 300px;
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 26px;
+  }
+
+  .hero-titles {
+    font-size: 12px;
+  }
+
+  .hero-btn {
+    padding: 12px 28px;
+    font-size: 15px;
+    width: 100%; 
+  }
+
+  .hero-right, .hero-bg-img, .hero2, .hero3 {
+    height: 220px;
+    min-height: 220px;
+  }
+}

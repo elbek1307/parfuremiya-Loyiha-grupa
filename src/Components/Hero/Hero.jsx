@@ -34,21 +34,21 @@ function Hero() {
               </div>
           
               <div className="hero-right">
-                <img src="/img/heroi.jpg" alt="rasm" />
+                
               </div>
             </div>
           </div>
 
           <div>
             <div className="hero-info">
-             <img src="/img/hero11.jpg" alt="rasm" />
+             <img className="hero2" src={hero11} alt="rasm" />
             </div>
           </div>
 
         
           <div>
             <div className="hero-info">
-             <img src="/img/herro2.jpg" alt="rasm" />
+             <img className="hero3" src={herro2} alt="rasm" />
             </div>
           </div>
 
