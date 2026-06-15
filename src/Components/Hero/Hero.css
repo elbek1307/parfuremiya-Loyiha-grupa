@@ -139,52 +139,82 @@
 .slick-prev, .slick-next {
   display: none !important;
 }
+
 @media (max-width: 768px) {
+  /* Barcha slaydlar telefon ekranida bir xil qat'iy balandlikda tursin (Masalan: 400px) */
   .hero-slide-item {
-    height: auto;
-    min-height: auto;
+    height: 420px !important; 
+    position: relative;
+    box-sizing: border-box;
   }
   
+  /* 1-slayd ichidagi matn va fon joylashuvi */
   .first-slide {
     flex-direction: column-reverse;
     align-items: center;
-    padding-top: 250px;
+    justify-content: flex-start; /* Matnlarni rasm tagidan tartib bilan boshlaydi */
+    padding-top: 180px; /* Rasm uchun yuqoridan joy ochamiz */
+    box-sizing: border-box;
   }
 
+  /* 1-slaydning orqa foni: matnga halaqit bermay tepada 100% yoyilib turadi */
   .hero-absolute-bg {
-    width: calc(100% + 40px);
+    width: calc(100% + 40px) !important;
     right: -20px;
-    height: 240px;
+    height: 180px; /* Rasmning mobil balandligi */
     background-position: center;
     top: 0;
   }
 
+  /* Chap tomondagi matnlar blokining stili */
   .hero-left-content {
     max-width: 100%;
     text-align: center;
-    padding-top: 20px;
+    padding: 15px 10px 0 10px;
+    box-sizing: border-box;
   }
 
   .hero-title {
-    font-size: 32px;
+    font-size: 26px; /* Telefonda sarlavha chiroyli sig'ishi uchun */
+    margin: 0 0 10px 0;
+  }
+
+  .hero-text {
+    font-size: 13px;
+    line-height: 1.4;
+    margin: 0 0 20px 0;
   }
 
   .hero-btn {
     align-self: center;
     width: 100%;
+    padding: 12px 0;
   }
 
+  /* Ikonkalar pastda rasm ustida emas, matn tagida chiroyli turadi */
   .hero-right-socials {
     flex-direction: row;
     justify-content: center;
     padding-right: 0;
-    margin: 20px 0;
+    margin: 15px 0 0 0;
+    gap: 30px;
   }
 
+  /* ==========================================================================
+     MANA SHU QATOR 2- VA 3-SLAYD RASMLARINI TO'LIQ BALANDLIKDA USHLAYDI
+     ========================================================================== */
+  .hero-full-width-img {
+    height: 100% !important;
+    width: 100% !important;
+    object-fit: cover; /* Rasm siqilib xunuk bo'lib qolmaydi, maydonni to'liq qoplaydi */
+    border-radius: 4px;
+  }
+
+  /* Slayder nuqtalari (dots) */
   .slick-dots {
     left: 0 !important;
     right: 0 !important;
     text-align: center !important;
-    bottom: -10px !important;
+    bottom: 5px !important;
   }
 }
