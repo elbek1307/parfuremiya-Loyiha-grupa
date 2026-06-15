@@ -169,7 +169,7 @@
     top: 0;
   }
 
-  /* Chap tomondagi matnlar bloki */
+
   .hero-left-content {
     max-width: 100%;
     text-align: center;
@@ -184,7 +184,7 @@
   }
 
   .hero-title {
-    font-size: 28px; /* O'rtacha telefonlar uchun */
+    font-size: 28px;
     margin: 0 0 12px 0;
     line-height: 1.2;
   }
@@ -201,8 +201,6 @@
     padding: 12px 0;
     font-size: 14px;
   }
-
-  /* Ikonkalar pastda silliq qatorda turadi */
   .hero-right-socials {
     flex-direction: row;
     justify-content: center;
@@ -211,15 +209,13 @@
     gap: 25px;
   }
 
-  /* 2- VA 3-SLAYD RASMLARI TO'LIQ BALANDLIKDA */
   .hero-full-width-img {
     height: 100% !important;
     width: 100% !important;
-    object-fit: cover; /* Rasm sifati buzilmay to'liq qoplaydi */
+    object-fit: cover; 
     border-radius: 4px;
   }
 
-  /* Nuqtalar (Dots) */
   .slick-dots {
     left: 0 !important;
     right: 0 !important;
@@ -227,17 +223,13 @@
     bottom: 5px !important;
   }
 }
-
-/* ==========================================================================
-   9. JUDA KICHIK TELEFONLAR UCHUN (Kengligi 400px dan kichik ekranlar)
-   ========================================================================== */
 @media (max-width: 400px) {
   .hero-slide-item {
-    height: 430px !important; /* Ekran juda kichikligi uchun balandlikni sal qisqartirdik */
+    height: 430px !important;
   }
 
   .first-slide {
-    padding-top: 170px; /* Rasm maydonini moslashtirish */
+    padding-top: 170px; 
   }
 
   .hero-absolute-bg {
@@ -245,12 +237,12 @@
   }
 
   .hero-title {
-    font-size: 22px; /* Sarlavha kichik ekranda 2 qatorga chiroyli sig'ishi uchun */
+    font-size: 22px;
     margin: 0 0 8px 0;
   }
 
   .hero-text {
-    font-size: 12px; /* Matn o'qishga qulay va ixcham */
+    font-size: 12px;
     line-height: 1.35;
     margin: 0 0 15px 0;
   }
