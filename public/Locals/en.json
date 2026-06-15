@@ -1,0 +1,24 @@
+{
+    "team": [
+        {
+            "name": "Voynich Darya",
+            "position": "Deputy Sales Director",
+            "phone": "+375 (17) 270-53-77 (317)",
+            "email": ""
+        },
+        {
+            "name": "Misko Ekaterina",
+            "position": "Head of Support Department",
+            "phone": "+375 (17) 270-53-77 (115), +375 29 112-73-48",
+            "email": "k.melnichenko@leangroup.by"
+        }
+    ],
+    "team_section": {
+        "title": "Team",
+        "button": "View all"
+    },
+    "news_section": {
+        "title": "News",
+        "button": "All news"
+    }
+}

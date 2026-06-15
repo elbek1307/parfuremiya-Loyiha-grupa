@@ -1,34 +1,31 @@
-/* :root o'zgaruvchilaringiz bilan moslashtirilgan stillar */
-
 .team-container {
-  max-w: 1200px;
+  max-width: 1240px;
   margin: 0 auto;
-  padding: 60px 20px;
-  /* Rasmdagi shrift uslubiga yaqinroq */
-  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif; 
+  padding: 50px 20px;
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
 }
 
-/* Sarlavha qismi */
+/* Sarlavha dizayni */
 .team-title {
-  font-size: 36px;
+  font-size: 38px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 50px;
-  color: var(--text-color); /* #2C2D2E */
+  margin-bottom: 60px;
+  color: var(--text-color);
 }
 
 .team-title span {
   color: var(--main-color); /* #EF7C00 */
 }
 
-/* 5 ta xodimni rasmdagidek tekis joylashtirish */
+/* 5 ta ustunli grid sxemasi (XATOLIK SHU YERDA EDI, TO'G'RILANDI) */
 .team-grid {
   display: grid;
-  grid-template-cols: repeat(5, 1fr);
-  gap: 30px;
+  grid-template-columns: repeat(5, 1fr); /* Endi aniq yonma-yon turadi */
+  gap: 25px;
+  align-items: start;
 }
 
-/* Har bir xodim kartochkasi */
 .team-card {
   display: flex;
   flex-direction: column;
@@ -36,15 +33,17 @@
   text-align: center;
 }
 
-/* Dumaloq rasm konteyneri */
+/* Rasmlar aylanasi va orqa foni */
 .image-wrapper {
-  width: 160px;
-  height: 160px;
+  width: 170px;
+  height: 170px;
   border-radius: 50%;
   overflow: hidden;
-  margin-bottom: 20px;
-  /* Rasm orqasidagi och ko'k/kulrang gradient effekt (rasmdagidek) */
-  background: linear-gradient(180deg, #f0f4f8 0%, #e2e8f0 100%); 
+  margin-bottom: 22px;
+  background: linear-gradient(180deg, #f3f7fa 0%, #e5ecf3 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .image-wrapper img {
@@ -53,60 +52,93 @@
   object-fit: cover;
 }
 
-/* Ism va Familiya */
+/* F.I.O */
 .member-name {
   font-size: 18px;
   font-weight: 600;
-  color: var(--text-color); /* #2C2D2E */
+  color: var(--text-color);
   margin-bottom: 6px;
   line-height: 1.3;
 }
 
-/* Lavozim (Och kulrang matn) */
+/* Lavozimlar uchun ajratilgan och kulrang */
 .member-position {
-  font-size: 14px;
+  font-size: 13px;
   color: var(--text2-color); /* #919399 */
-  margin-bottom: 14px;
-  min-height: 42px; /* Lavozimlar matni uzun bo'lsa ham kontaktlar bir xil chiziqda turadi */
+  margin-bottom: 15px;
+  min-height: 44px; /* Balandlikni tenglashtirish uchun */
   line-height: 1.4;
+  padding: 0 5px;
 }
 
-/* Kontaktlar qismi */
+/* Kontaktlar matni */
 .member-contacts {
   font-size: 13px;
-  color: var(--text-color); /* #2C2D2E */
+  color: var(--text-color);
   line-height: 1.6;
 }
 
-/* Email manzili */
+.phone-number {
+  margin: 2px 0;
+}
+
+/* Email havolasi */
 .member-email {
   display: inline-block;
-  margin-top: 4px;
+  margin-top: 5px;
   color: var(--text-color);
   transition: color 0.2s ease;
 }
 
 .member-email:hover {
-  color: var(--main-color); /* Sichqoncha olib borilganda asosiy rangga o'tadi */
+  color: var(--main-color);
   text-decoration: underline;
 }
 
-/* --- Ekran o'lchamiga qarab moslashuvchanlik (Responsiveness) --- */
-@media (max-width: 1100px) {
+/* Rasmdagi eng pastdagi o'ziga xos tugma bloki */
+.team-footer-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.team-footer-btn {
+  background: transparent;
+  border: 1px dashed var(--main-color); /* Nuqtali/punktir to'q sariq chegara */
+  color: var(--main-color);
+  padding: 12px 35px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.team-footer-btn:hover {
+  background-color: var(--main-color);
+  color: #fff;
+  border-style: solid;
+}
+
+/* --- Responsive (Ekran kichrayganda ham to'g'ri ishlashi uchun) --- */
+@media (max-width: 1150px) {
   .team-grid {
-    grid-template-cols: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 20px;
   }
 }
 
 @media (max-width: 768px) {
   .team-grid {
-    grid-template-cols: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 480px) {
   .team-grid {
-    grid-template-cols: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .team-title {
+    font-size: 30px;
   }
 }

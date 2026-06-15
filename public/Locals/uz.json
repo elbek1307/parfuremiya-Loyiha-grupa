@@ -1,0 +1,24 @@
+{
+    "team": [
+        {
+            "name": "Voynich Darya",
+            "position": "Sotuvlar bo'yicha direktor o'rinbosari",
+            "phone": "+375 (17) 270-53-77 (317)",
+            "email": ""
+        },
+        {
+            "name": "Misko Yekaterina",
+            "position": "Kuzatuv (qo'llab-quvvatlash) bo'limi boshlig'i",
+            "phone": "+375 (17) 270-53-77 (115), +375 29 112-73-48",
+            "email": "k.melnichenko@leangroup.by"
+        }
+    ],
+    "team_section": {
+        "title": "Jamoa",
+        "button": "Barchasini ko'rish"
+    },
+    "news_section": {
+        "title": "Yangiliklar",
+        "button": "Barcha yangiliklar"
+    }
+}

@@ -1,0 +1,100 @@
+.news-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+}
+
+/* Sarlavha - rasmdagi kabi rang va shrift qalinligi (boshqa bo'limlardek to'q sariq emas) */
+.news-title {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 45px;
+  color: var(--text-color); /* #2C2D2E */
+}
+
+/* 3 ta ustunli yonma-yon dizayn */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.news-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Barcha matnlarni to'g'ri chap tomonga tekislaydi */
+}
+
+/* Rasm bloki - barcha border-radiuslar olib tashlandi, rasmdagidek mutlaqo o'tkir burchakli to'rtburchak */
+.news-img-wrapper {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* To'g'ri to'rtburchak proporsiya */
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.news-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Sana (Och kulrang matn) */
+.news-date {
+  font-size: 14px;
+  color: var(--text2-color); /* #919399 */
+  margin-bottom: 8px;
+}
+
+/* Kartochka ichidagi yangilik sarlavhasi */
+.news-card-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-color); /* #2C2D2E */
+  line-height: 1.4;
+  text-align: left;
+}
+
+/* Pastki tugma qismi */
+.news-footer-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+/* Tugma - chegara chizig'i nuqtali emas, rasmdagidek to'g'ri ingichka chiziq qilindi */
+.news-footer-btn {
+  background: transparent;
+  border: 1px solid var(--main-color); /* Silliq to'g'ri chiziq border */
+  color: var(--main-color);
+  padding: 10px 35px;
+  font-size: 15px;
+  font-weight: 400;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+}
+
+/* Sichqoncha kelgandagi effekt */
+.news-footer-btn:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+/* --- Responsive (Ekran o'lchamiga moslashuv) --- */
+@media (max-width: 992px) {
+  .news-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+  .news-title {
+    font-size: 28px;
+  }
+}
