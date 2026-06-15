@@ -151,20 +151,19 @@
     box-sizing: border-box;
   }
   
-  /* 1-slayd ichidagi kontentni tartiblash */
   .first-slide {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: flex-start; 
-    padding-top: 200px; /* Rasm uchun tepadan joy */
+    padding-top: 200px; 
     box-sizing: border-box;
   }
 
-  /* 1-slaydning o'ng foni: kichik ekranda ham chekka urilib qolmaydi */
+
   .hero-absolute-bg {
     width: calc(100% + 40px) !important;
     right: -20px;
-    height: 200px; /* Rasm balandligi */
+    height: 200px;
     background-position: center right;
     top: 0;
   }
