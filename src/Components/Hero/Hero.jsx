@@ -37,7 +37,7 @@ function Hero() {
           <div>
             <div className="hero-slide-item first-slide">
               
-              {/* Orqa fondagi rasm (Butun slayd maydonini egallaydi va chap tomondagi matnning ham tagiga o'tadi) */}
+             
               <div 
                 className="hero-absolute-bg" 
                 style={{ backgroundImage: `url(${heroi})` }}
