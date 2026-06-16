@@ -1,0 +1,164 @@
+/* Umumiy seksiya stillari */
+.section-two {
+  width: 100%;
+  padding: 60px 20px;
+  background-color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.section-two-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Sarlavha */
+.section-two-title {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 50px;
+  letter-spacing: 0.5px;
+}
+
+.section-two-highlight {
+  color: #f47920; /* To'q sariq rang */
+}
+
+/* Karusel asosiy bloki */
+.section-two-carousel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  gap: 15px;
+}
+
+/* Chap va o'ng strelkalar */
+.carousel-arrow {
+  background: none;
+  border: none;
+  font-size: 45px;
+  color: #cccccc;
+  cursor: pointer;
+  padding: 0 10px;
+  transition: color 0.3s ease, transform 0.2s ease;
+  user-select: none;
+  z-index: 10;
+}
+
+.carousel-arrow:hover {
+  color: #f47920;
+  transform: scale(1.1);
+}
+
+/* Rasmlar yo'lakchasi (Track) */
+.carousel-track-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform;
+}
+
+/* Har bir rasm elementi */
+.carousel-slide {
+  min-width: calc(20% - 16px); /* Katta ekranda 5 ta rasm yonma-yon */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.carousel-slide:hover {
+  transform: scale(1.03);
+}
+
+.cert-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  border: 1px solid #f0f0f0;
+}
+
+/* Pastdagi nuqtachalar */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 30px;
+}
+
+.carousel-dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1.5px solid #f47920;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Faol turgan nuqta to'q sariq bo'ladi */
+.carousel-dots .dot.active {
+  background-color: #f47920;
+  transform: scale(1.1);
+}
+
+/* ==========================================
+   RESPONSIVE (Planshet va Telefon versiya)
+========================================== */
+
+/* Planshetlar uchun (Max-width: 992px) */
+@media (max-width: 992px) {
+  .section-two-title {
+    font-size: 26px;
+    margin-bottom: 35px;
+  }
+
+  .carousel-slide {
+    min-width: calc(33.333% - 14px); /* Planshetda 3 tadan ko'rinadi */
+  }
+
+  .carousel-arrow {
+    font-size: 38px;
+  }
+}
+
+/* Kichik telefonlar uchun (Max-width: 576px) */
+@media (max-width: 576px) {
+  .section-two {
+    padding: 40px 10px;
+  }
+
+  .section-two-title {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 25px;
+    padding: 0 10px;
+  }
+
+  .carousel-slide {
+    min-width: calc(50% - 10px); /* Telefonlarda qisilib qolmasligi uchun 2 tadan ko'rsatamiz */
+  }
+
+  .carousel-arrow {
+    font-size: 32px;
+    padding: 0 5px;
+  }
+
+  .carousel-dots {
+    margin-top: 20px;
+  }
+}
