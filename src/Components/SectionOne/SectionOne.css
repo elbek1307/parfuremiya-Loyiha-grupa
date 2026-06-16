@@ -1,18 +1,16 @@
-/* Asosiy sektsiya parametrlari */
+
 .section-one {
   width: 100%;
   padding: 60px 20px;
   background-color: #ffffff;
   font-family: 'Inter', 'Helvetica Neue', sans-serif;
-  box-sizing: border-box;
+  margin-top: -20px;
 }
 
 .section-one-container {
   max-width: 1200px;
   margin: 0 auto;
 }
-
-/* Sarlavha stillari */
 .section-one-title {
   font-size: 32px;
   font-weight: 700;
@@ -24,18 +22,14 @@
 }
 
 .section-one-brand {
-  color: #f47920; /* Skrinshotdagi o'sha to'q sariq rang */
+  color: #f47920; 
 }
-
-/* Grid Tizimi (Katta ekranlar uchun) */
 .section-one-grid {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   gap: 40px;
   align-items: flex-start;
 }
-
-/* Video blok stillari */
 .section-one-video-wrapper {
   position: relative;
   width: 100%;
@@ -64,8 +58,6 @@
 .section-one-poster:hover .section-one-img {
   transform: scale(1.02);
 }
-
-/* To'q sariq dumaloq play tugmasi overlayi */
 .section-one-play-btn {
   position: absolute;
   top: 50%;
@@ -81,8 +73,6 @@
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(244, 121, 32, 0.4);
 }
-
-/* Ichidagi oq uchburchak */
 .section-one-triangle {
   width: 0;
   height: 0;
@@ -102,8 +92,6 @@
   height: 100%;
   border: none;
 }
-
-/* Matn qismi stillari */
 .section-one-text-wrapper {
   display: flex;
   flex-direction: column;
@@ -117,15 +105,9 @@
   margin: 0;
   text-align: justify;
 }
-
-/* ==========================================
-   RESPONSIVE - MEDIA QUERIES
-========================================== */
-
-/* Planshetlar uchun (Ekran < 992px) */
 @media (max-width: 992px) {
   .section-one-grid {
-    grid-template-columns: 1fr; /* Video va matn ustma-ust tushadi */
+    grid-template-columns: 1fr; 
     gap: 30px;
   }
   
@@ -140,10 +122,11 @@
   }
 }
 
-/* Kichik telefonlar uchun (Ekran < 576px) */
+
 @media (max-width: 576px) {
   .section-one {
     padding: 40px 15px;
+    margin-top: -20px;
   }
 
   .section-one-title {
