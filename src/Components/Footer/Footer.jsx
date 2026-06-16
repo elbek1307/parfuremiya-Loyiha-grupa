@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="container">
 
-        {/* Top qism: logo + social */}
+       
         <div className="footer_top">
           <img src={logo} alt="LeanGroup" className="footer_logo" />
           <div className="footer_social">
@@ -23,10 +23,9 @@ const Footer = () => {
 
         <div className="footer_divider" />
 
-        {/* O'rta qism: linklar + kontaktlar */}
+    
         <div className="footer_middle">
 
-          {/* Mahsulotlar */}
           <div className="footer_col">
             <h4 className="footer_title">{t("footer.products")}</h4>
             <ul className="footer_list">
