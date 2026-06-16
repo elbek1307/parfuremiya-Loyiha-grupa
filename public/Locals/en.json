@@ -79,6 +79,16 @@
     "button": "All news"
   },
 
+  "nash": {
+   "title": "Наша",
+   "title_span": "продукция",
+   "btn1": "Ламинатные тубы",
+   "btn2": "Экструзионные тубы",
+   "btn3": "Другая упаковка",
+   "bottom_btn": "Перейти в каталог"
+    
+  },
+
 
   "footer": {
     "products": "Products",

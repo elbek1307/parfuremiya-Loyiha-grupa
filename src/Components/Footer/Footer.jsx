@@ -15,9 +15,9 @@ const Footer = () => {
         <div className="footer_top">
           <img src={logo} alt="LeanGroup" className="footer_logo" />
           <div className="footer_social">
-            <a href="#" className="footer_icon"><FaVk /></a>
-            <a href="#" className="footer_icon"><FaFacebookF /></a>
-            <a href="#" className="footer_icon"><FaLinkedinIn /></a>
+            <a href="https://vk.com/login" className="footer_icon" target="blank"><FaVk /></a>
+            <a href="https://www.facebook.com/" className="footer_icon" target="blank"><FaFacebookF /></a>
+            <a href="https://www.linkedin.com" className="footer_icon" target="blank"><FaLinkedinIn /></a>
           </div>
         </div>
 
