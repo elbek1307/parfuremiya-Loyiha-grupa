@@ -77,5 +77,26 @@
   "news_section": {
     "title": "Yangiliklar",
     "button": "Barcha yangiliklar"
+  },
+
+   "footer": {
+    "products": "Mahsulotlar",
+    "laminate": "Laminat trubalar",
+    "extrusion": "Ekstruzion trubalar",
+    "other": "Boshqa qadoqlash",
+    "company": "Kompaniya",
+    "about": "Biz haqimizda",
+    "team": "Bizning jamoa",
+    "certificates": "Sertifikatlar",
+    "sections": "Bo'limlar",
+    "contacts": "Kontaktlar",
+    "news": "Yangiliklar",
+    "vacancies": "Vakansiyalar",
+    "belarus": "Belarus",
+    "europe": "Yevropa",
+    "moscow": "Moskva",
+    "ekaterinburg": "Yekaterinburg",
+    "copy": "© 2022 Leangroup. All Rights Reserved.",
+    "dev": "Saytni ishlab chiqish va ilgari surish SkyWeb.by"
   }
 }

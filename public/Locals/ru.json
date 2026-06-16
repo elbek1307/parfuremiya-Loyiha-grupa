@@ -77,5 +77,26 @@
   "news_section": {
     "title": "Новости",
     "button": "Все новости"
+  },
+
+    "footer": {
+    "products": "Продукция",
+    "laminate": "Ламинатные тубы",
+    "extrusion": "Экструзионные тубы",
+    "other": "Другая упаковка",
+    "company": "Компания",
+    "about": "О нас",
+    "team": "Наша команда",
+    "certificates": "Сертификаты",
+    "sections": "Разделы",
+    "contacts": "Контакты",
+    "news": "Новости",
+    "vacancies": "Вакансии",
+    "belarus": "Беларусь",
+    "europe": "Европа",
+    "moscow": "Москва",
+    "ekaterinburg": "Екатеринбург",
+    "copy": "© 2022 Leangroup. All Rights Reserved.",
+    "dev": "Разработка и продвижение сайтов SkyWeb.by"
   }
 }

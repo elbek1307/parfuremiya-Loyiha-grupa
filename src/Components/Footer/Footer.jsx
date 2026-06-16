@@ -5,7 +5,7 @@ import "./Footer.css";
 import logo from "./logo.svg";
 
 const Footer = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <footer className="footer">
@@ -36,7 +36,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Kompaniya */}
+      
           <div className="footer_col">
             <h4 className="footer_title">{t("footer.company")}</h4>
             <ul className="footer_list">
@@ -46,7 +46,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Razdellar */}
+       
           <div className="footer_col">
             <h4 className="footer_title">{t("footer.sections")}</h4>
             <ul className="footer_list">
@@ -56,7 +56,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Kontaktlar */}
           <div className="footer_contacts">
 
             <div className="footer_contact_group">
@@ -86,7 +85,7 @@ const Footer = () => {
 
         <div className="footer_divider" />
 
-        {/* Bottom qism: copyright */}
+        
         <div className="footer_bottom">
           <span className="footer_copy">{t("footer.copy")}</span>
           <span className="footer_dev">{t("footer.dev")}</span>

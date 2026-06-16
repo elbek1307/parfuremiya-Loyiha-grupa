@@ -77,5 +77,27 @@
   "news_section": {
     "title": "News",
     "button": "All news"
+  },
+
+
+  "footer": {
+    "products": "Products",
+    "laminate": "Laminate Tubes",
+    "extrusion": "Extrusion Tubes",
+    "other": "Other Packaging",
+    "company": "Company",
+    "about": "About Us",
+    "team": "Our Team",
+    "certificates": "Certificates",
+    "sections": "Sections",
+    "contacts": "Contacts",
+    "news": "News",
+    "vacancies": "Vacancies",
+    "belarus": "Belarus",
+    "europe": "Europe",
+    "moscow": "Moscow",
+    "ekaterinburg": "Ekaterinburg",
+    "copy": "© 2022 Leangroup. All Rights Reserved.",
+    "dev": "Website development and promotion by SkyWeb.by"
   }
 }
