@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import "./SectionTwo.css";
-import React from 'react'
+import React, { useState } from 'react'
 import two1 from "./image/two1.png";
 import two2 from "./image/two2.png";
 import two3 from "./image/two3.png";
@@ -9,11 +9,70 @@ import two5 from "./image/two5.png";
 
 function SectionTwo() {
     const {t} = useTranslation();
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+  const certificates = [two1, two2, two3, two4, two5];
+  
+  const totalDots = 3; 
+
+  const handlePrev = () => {
+    setCurrentIndex((prev) => (prev === 0 ? totalDots - 1 : prev - 1));
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prev) => (prev === totalDots - 1 ? 0 : prev + 1));
+  };
   return (
-    <div className="sectionOne">
-        <div className="container">
-            <div className="sectionOne-wrapper"></div>
+    <div className="section-two" id="sectionTwo">
+      <div className="section-two-container">
+        
+        {/* Sarlavha qismi */}
+        <h2 className="section-two-title">
+          {t("sectionTwo.title_main")}{" "}
+          <span className="section-two-highlight">{t("sectionTwo.title_brand")}</span>
+        </h2>
+
+        {/* Karusel tizimi */}
+        <div className="section-two-carousel-wrapper">
+          
+          {/* Chap tomondagi tugma */}
+          <button className="carousel-arrow prev" onClick={handlePrev} aria-label="Previous">
+            &#8249;
+          </button>
+
+          {/* Rasmlar ko'rinadigan oyna */}
+          <div className="carousel-track-container">
+            <div 
+              className="carousel-track" 
+              style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
+            >
+              {certificates.map((cert, index) => (
+                <div className="carousel-slide" key={index}>
+                  <img src={cert} alt={`Certificate ${index + 1}`} className="cert-img" />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* O'ng tomondagi tugma */}
+          <button className="carousel-arrow next" onClick={handleNext} aria-label="Next">
+            &#8250;
+          </button>
+
         </div>
+
+        {/* Pastdagi indicator nuqtachalar */}
+        <div className="carousel-dots">
+          {[...Array(totalDots)].map((_, index) => (
+            <span
+              key={index}
+              className={`dot ${currentIndex === index ? "active" : ""}`}
+              onClick={() => setCurrentIndex(index)}
+            ></span>
+          ))}
+        </div>
+
+      </div>
     </div>
   )
 }
