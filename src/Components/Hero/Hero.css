@@ -1,47 +1,59 @@
-
 .hero {
-  background-color: #ffffff; 
   padding: 40px 0;
   width: 100%;
   overflow: hidden;
 }
+
+.hero .slick-slide > div {
+  display: block;
+  height: 100%;
+}
+
 .hero .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
   position: relative;
   box-sizing: border-box;
+  height: 100%;
 }
 
-
-.hero-slide-item {
-  width: 100%;
-  height: 480px; 
-  position: relative;
-  box-sizing: border-box;
-}
-.first-slide {
+.hero .hero-flex-container {
   display: flex !important;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 10;
 }
-.hero-absolute-bg {
+
+/* DESKTOP: Barcha sliderlar bir xil standart 650px balandlikda */
+.hero-slide-item {
+  width: 100%;
+  height: 650px; 
+  box-sizing: border-box;
+  position: relative;
+}
+
+.first-slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+}
+
+.hero-overlay {
   position: absolute;
   top: 0;
-  right: -20px; 
-  width: calc(100% + (100vw - 100%) / 2); 
-  
+  left: 0;
+  width: 100%;
   height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover; 
-  background-position: center right; 
-  z-index: 1; 
+  background: linear-gradient(90deg, rgba(0, 16, 61, 0.2) 0%, rgba(0, 16, 61, 0) 100%);
+  z-index: 2;
 }
 
 .hero-left-content {
-  position: relative;
-  z-index: 10; 
-  max-width: 520px; 
+  max-width: 540px; 
   width: 100%;
 }
 
@@ -87,13 +99,17 @@
 .hero-btn:hover {
   background-color: #e67e22;
 }
+
+/* Ikonkalar containerdan tashqarida va yana ozgina o'ngga surildi */
 .hero-right-socials {
-  position: relative;
-  z-index: 10; /* Bu ham rasm ustida chiroyli turadi */
+  position: absolute;
+  right: 10px; /* Surilish masofasi ko'paytirildi */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 15; 
   display: flex;
   flex-direction: column;
   gap: 25px;
-  padding-right: 10px; 
 }
 
 .social-icon {
@@ -107,15 +123,16 @@
   color: #333333;
   transform: scale(1.2);
 }
+
 .hero-full-width-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 6px;
 }
+
 .slick-dots {
   bottom: 20px !important;
-  left: 0 !important;
+  left: 20px !important;
   text-align: left !important;
   width: auto !important;
   z-index: 15;
@@ -140,115 +157,95 @@
   display: none !important;
 }
 
+/* --- RESPONSIBLAR (Uchala slider ham 100% bir xil o'lchamda) --- */
 @media (max-width: 768px) {
+  /* DIQQAT: 1, 2 va 3-sliderlar hammasi mobilda bir xil 500px balandlikda bo'ladi */
   .hero-slide-item {
-    height: 450px !important; 
-    position: relative;
-    box-sizing: border-box;
+    height: 500px !important;
   }
-  
+
   .first-slide {
-    flex-direction: column-reverse;
+    background-position: center center;
+    padding: 40px 0;
+  }
+
+  .hero-overlay {
+    background: rgba(90, 108, 157, 0.4);
+  }
+
+  .hero .hero-flex-container {
+    justify-content: center;
     align-items: center;
-    justify-content: flex-start; 
-    padding-top: 200px; 
-    box-sizing: border-box;
   }
-
-
-  .hero-absolute-bg {
-    width: calc(100% + 40px) !important;
-    right: -20px;
-    height: 200px;
-    background-position: center right;
-    top: 0;
-  }
-
 
   .hero-left-content {
     max-width: 100%;
     text-align: center;
-    padding: 10px 5px 0 5px;
-    box-sizing: border-box;
-  }
-
-  .hero-sub-subtitle {
-    font-size: 11px;
-    letter-spacing: 1px;
-    margin: 0 0 8px 0;
+    padding: 0 10px;
+    color: #ffffff; 
   }
 
   .hero-title {
-    font-size: 28px;
+    font-size: 30px;
+    color: #ffffff;
     margin: 0 0 12px 0;
-    line-height: 1.2;
   }
 
   .hero-text {
-    font-size: 13px;
-    line-height: 1.4;
+    font-size: 14px;
+    color: #f5f5f5;
     margin: 0 0 20px 0;
+    line-height: 1.4;
+  }
+
+  .hero-sub-subtitle {
+    color: #bdc3c7;
+    margin: 0 0 8px 0;
   }
 
   .hero-btn {
-    align-self: center;
-    width: 100%;
-    padding: 12px 0;
-    font-size: 14px;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
   }
   .hero-right-socials {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: auto;
+    bottom: 50px;
+    transform: none;
     flex-direction: row;
     justify-content: center;
-    padding-right: 0;
-    margin: 15px 0 0 0;
     gap: 25px;
-  }
-
-  .hero-full-width-img {
-    height: 100% !important;
-    width: 100% !important;
-    object-fit: cover; 
-    border-radius: 4px;
   }
 
   .slick-dots {
     left: 0 !important;
     right: 0 !important;
     text-align: center !important;
-    bottom: 5px !important;
+    bottom: 15px !important;
   }
 }
+
 @media (max-width: 400px) {
   .hero-slide-item {
-    height: 430px !important;
-  }
-
-  .first-slide {
-    padding-top: 170px; 
-  }
-
-  .hero-absolute-bg {
-    height: 170px;
+    height: 450px !important;
   }
 
   .hero-title {
-    font-size: 22px;
-    margin: 0 0 8px 0;
+    font-size: 24px;
   }
 
   .hero-text {
     font-size: 12px;
-    line-height: 1.35;
-    margin: 0 0 15px 0;
   }
 
   .hero-btn {
-    padding: 10px 0;
-    font-size: 13px;
+    width: 100%;
   }
   
   .hero-right-socials {
-    margin: 10px 0 0 0;
-    gap: 20px;
+    bottom: 45px;
   }
 }

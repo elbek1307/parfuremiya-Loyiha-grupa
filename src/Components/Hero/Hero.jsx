@@ -26,16 +26,18 @@ function Hero() {
 
   return (
     <div className="hero">
-      <div className="container">
-        <Slider {...settings}>
-          <div>
-            <div className="hero-slide-item first-slide">
-              
-             
-              <div 
-                className="hero-absolute-bg" 
-                style={{ backgroundImage: `url(${heroi})` }}
-              ></div>
+      <Slider {...settings}>
+        
+        {/* 1-SLIDER: Fon 100% va to'liq ekran */}
+        <div>
+          <div 
+            className="hero-slide-item first-slide"
+            style={{ backgroundImage: `url(${heroi})` }}
+          >
+            <div className="hero-overlay"></div>
+
+            {/* Matnlar 1200px container ichida chegaralangan */}
+            <div className="container hero-flex-container">
               <div className="hero-left-content">
                 <h6 className="hero-sub-subtitle">{t("hero.hero-titles") || "LEANGROUP - тубы и этикетка"}</h6>
                 <h1 className="hero-title">{t("hero.hero-title") || "Ламинатные тубы"}</h1>
@@ -44,34 +46,39 @@ function Hero() {
                 </p> 
                 <button className="hero-btn">{t("hero.hero-btn") || "Каталог"}</button>
               </div>
-
-              <div className="hero-right-socials">
-                <a href="https://vk.com" target="_blank" rel="noreferrer" className="social-icon">
-                  <FaVk />
-                </a>
-                <a href="https://facebook.com" target="_blank" rel="noreferrer" className="social-icon">
-                  <FaFacebookF />
-                </a>
-                <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="social-icon">
-                  <FaLinkedinIn />
-                </a>
-              </div>
-
             </div>
-          </div>
-          <div>
-            <div className="hero-slide-item">
-              <img className="hero-full-width-img" src={hero11} alt="rasm" />
-            </div>
-          </div>
-          <div>
-            <div className="hero-slide-item">
-              <img className="hero-full-width-img" src={herro2} alt="rasm" />
-            </div>
-          </div>
 
-        </Slider>
-      </div>
+            {/* Ikonkalar containerdan chiqib, eng o'ng chekkaga joylashdi */}
+            <div className="hero-right-socials">
+              <a href="https://vk.com" target="_blank" rel="noreferrer" className="social-icon">
+                <FaVk />
+              </a>
+              <a href="https://facebook.com" target="_blank" rel="noreferrer" className="social-icon">
+                <FaFacebookF />
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="social-icon">
+                <FaLinkedinIn />
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        {/* 2-SLIDER */}
+        <div>
+          <div className="hero-slide-item standard-slide">
+            <img className="hero-full-width-img" src={hero11} alt="rasm" />
+          </div>
+        </div>
+
+        {/* 3-SLIDER */}
+        <div>
+          <div className="hero-slide-item standard-slide">
+            <img className="hero-full-width-img" src={herro2} alt="rasm" />
+          </div>
+        </div>
+
+      </Slider>
     </div>
   );
 }
