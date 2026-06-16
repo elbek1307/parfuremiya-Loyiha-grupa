@@ -5,23 +5,15 @@ import './SectionOne.css';
 const SectionOne = () => {
   const { t } = useTranslation();
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
-
-  // LeanGroup ishlab chiqarish jarayoniga oid video IDsi
   const videoId = "3S_fT7H6Ew0"; 
 
   return (
     <section className="section-one" id="sectionOne">
       <div className="section-one-container">
-        
-        {/* Sarlavha qismi */}
         <h2 className="section-one-title">
           {t('about.title_main')} <span className="section-one-brand">{t('about.title_brand')}</span>
         </h2>
-
-        {/* Asosiy blok (Video va Matn) */}
         <div className="section-one-grid">
-          
-          {/* Video / Poster blok */}
           <div className="section-one-video-wrapper">
             {!isVideoPlaying ? (
               <div className="section-one-poster" onClick={() => setIsVideoPlaying(true)}>
@@ -30,7 +22,6 @@ const SectionOne = () => {
                   alt="LeanGroup Production Poster" 
                   className="section-one-img"
                 />
-                {/* Skrinshotingizdagi to'q sariq rangli aylanma Play tugmasi */}
                 <div className="section-one-play-btn">
                   <div className="section-one-triangle"></div>
                 </div>
@@ -46,8 +37,6 @@ const SectionOne = () => {
               ></iframe>
             )}
           </div>
-
-          {/* Matnli blok */}
           <div className="section-one-text-wrapper">
             <p className="section-one-p">{t('about.p1')}</p>
             <p className="section-one-p">{t('about.p2')}</p>
