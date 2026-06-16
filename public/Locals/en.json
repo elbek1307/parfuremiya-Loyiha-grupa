@@ -4,7 +4,13 @@
   "hero-title": "Laminate tubes",
   "hero": "Used for toothpaste production. Widely applied in cosmetics, food industry, parapharmaceuticals, household chemicals, and DIY (Do-it-Yourself).",
   "hero-btn": "Catalog"
-},
+},"about": {
+    "title_main": "About",
+    "title_brand": "LEANGROUP",
+    "p1": "LeanGroup LLC started its operations in 1999 and today is a leading company in the production of laminate and extrusion tubes.",
+    "p2": "Having two technologies - for the production of laminate and extrusion tubes, we offer you a wide range of possibilities. A great advantage is our own printing shop in laminate and in-line printing in extrusion with the possibility of various additional decor options. Special attention is paid to working with suppliers to control and maintain the quality of our products.",
+    "p3": "Since January 2018, the company has become a member of the European Tube Manufacturers Association (ETMA), which confirms the strong position of the brand in the European market."
+  },
     "team": [
         {
             "name": "Voynich Darya",
