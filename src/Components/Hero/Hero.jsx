@@ -27,16 +27,12 @@ function Hero() {
   return (
     <div className="hero">
       <Slider {...settings}>
-        
-        {/* 1-SLIDER: Fon 100% va to'liq ekran */}
         <div>
           <div 
             className="hero-slide-item first-slide"
             style={{ backgroundImage: `url(${heroi})` }}
           >
             <div className="hero-overlay"></div>
-
-            {/* Matnlar 1200px container ichida chegaralangan */}
             <div className="container hero-flex-container">
               <div className="hero-left-content">
                 <h6 className="hero-sub-subtitle">{t("hero.hero-titles") || "LEANGROUP - тубы и этикетка"}</h6>
@@ -47,8 +43,6 @@ function Hero() {
                 <button className="hero-btn">{t("hero.hero-btn") || "Каталог"}</button>
               </div>
             </div>
-
-            {/* Ikonkalar containerdan chiqib, eng o'ng chekkaga joylashdi */}
             <div className="hero-right-socials">
               <a href="https://vk.com" target="_blank" rel="noreferrer" className="social-icon">
                 <FaVk />
@@ -63,15 +57,11 @@ function Hero() {
 
           </div>
         </div>
-
-        {/* 2-SLIDER */}
         <div>
           <div className="hero-slide-item standard-slide">
             <img className="hero-full-width-img" src={hero11} alt="rasm" />
           </div>
         </div>
-
-        {/* 3-SLIDER */}
         <div>
           <div className="hero-slide-item standard-slide">
             <img className="hero-full-width-img" src={herro2} alt="rasm" />
