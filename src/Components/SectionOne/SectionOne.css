@@ -1,0 +1,171 @@
+/* Asosiy sektsiya parametrlari */
+.section-one {
+  width: 100%;
+  padding: 60px 20px;
+  background-color: #ffffff;
+  font-family: 'Inter', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
+}
+
+.section-one-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Sarlavha stillari */
+.section-one-title {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 45px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.section-one-brand {
+  color: #f47920; /* Skrinshotdagi o'sha to'q sariq rang */
+}
+
+/* Grid Tizimi (Katta ekranlar uchun) */
+.section-one-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* Video blok stillari */
+.section-one-video-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  background-color: #000;
+}
+
+.section-one-poster {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.section-one-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.9);
+  transition: transform 0.4s ease;
+}
+
+.section-one-poster:hover .section-one-img {
+  transform: scale(1.02);
+}
+
+/* To'q sariq dumaloq play tugmasi overlayi */
+.section-one-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75px;
+  height: 75px;
+  background-color: #f47920;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(244, 121, 32, 0.4);
+}
+
+/* Ichidagi oq uchburchak */
+.section-one-triangle {
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 20px solid #ffffff;
+  margin-left: 6px;
+}
+
+.section-one-poster:hover .section-one-play-btn {
+  transform: translate(-50%, -50%) scale(1.1);
+  background-color: #e06716;
+}
+
+.section-one-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Matn qismi stillari */
+.section-one-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.section-one-p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #4f4f4f;
+  margin: 0;
+  text-align: justify;
+}
+
+/* ==========================================
+   RESPONSIVE - MEDIA QUERIES
+========================================== */
+
+/* Planshetlar uchun (Ekran < 992px) */
+@media (max-width: 992px) {
+  .section-one-grid {
+    grid-template-columns: 1fr; /* Video va matn ustma-ust tushadi */
+    gap: 30px;
+  }
+  
+  .section-one-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  .section-one-play-btn {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+/* Kichik telefonlar uchun (Ekran < 576px) */
+@media (max-width: 576px) {
+  .section-one {
+    padding: 40px 15px;
+  }
+
+  .section-one-title {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+
+  .section-one-p {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  .section-one-play-btn {
+    width: 55px;
+    height: 55px;
+  }
+
+  .section-one-triangle {
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 14px solid #ffffff;
+    margin-left: 4px;
+  }
+}
