@@ -114,6 +114,9 @@
   }
 }
 @media (max-width: 576px) {
+    .section-two{
+        margin-top: -20px;
+    }
   .carousel-slide {
     flex: 0 0 calc(50% - 10px);
   }
