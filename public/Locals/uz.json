@@ -1,10 +1,33 @@
 {
-    "hero": {
-  "hero-titles": "LEANGROUP - tubalar va yorliqlar",
-  "hero-title": "Laminatlangan tubalar",
-  "hero-text": "Tish pastalari ishlab chiqarishda ishlatiladi. Kosmetika, oziq-ovqat sanoati, paratsevtika, maishiy kimyo va DIY (Do-it-Yourself — o'zingiz bajaring) sohalarida keng qo'llaniladi.",
-  "hero-btn": "Katalog"
-},"about": {
+     "nav": {
+    "logo_alt": "LeanGroup Logotipi",
+    "products": "Mahsulotlar",
+    "certificates": "Sertifikatlar",
+    "our_team": "Bizning jamoa",
+    "about": "Biz haqimizda",
+    "news": "Yangiliklar",
+    "vacancies": "Vakansiyalar",
+    "contacts": "Kontaktlar",
+    "submenu": {
+      "laminate_tubes": "Laminat trubalar",
+      "extrusion_tubes": "Ekstruzion trubalar",
+      "other_packaging": "Boshqa qadoqlash"
+    },
+    "lang": {
+      "en": "EN",
+      "ru": "RU",
+      "uz": "UZ"
+    }
+  },
+
+
+  "hero": {
+    "hero-titles": "LEANGROUP - tubalar va yorliqlar",
+    "hero-title": "Laminatlangan tubalar",
+    "hero-text": "Tish pastalari ishlab chiqarishda ishlatiladi. Kosmetika, oziq-ovqat sanoati, paratsevtika, maishiy kimyo va DIY (Do-it-Yourself — o'zingiz bajaring) sohalarida keng qo'llaniladi.",
+    "hero-btn": "Katalog"
+  },
+  "about": {
     "title_main": "Kompaniya haqida",
     "title_brand": "LEANGROUP",
     "p1": "«LeanGroup» MChJ kompaniyasi o'z faoliyatini 1999-yilda boshlagan va bugungi kunda laminatlangan va ekstruziya trubalarini ishlab chiqarish bo'yicha yetakchi kompaniya hisoblanadi.",
@@ -15,44 +38,44 @@
     "title_main": "Mahsulot sifatini tasdiqlaydi",
     "title_brand": "sertifikatlar"
   },
-    "team": [
-        {
-            "name": "Voynich Darya",
-            "position": "Sotuvlar bo'yicha direktor o'rinbosari",
-            "phone": "+375 (17) 270-53-77 (317)",
-            "email": ""
-        },
-        {
-            "name": "Misko Yekaterina",
-            "position": "Kuzatuv bo'limi boshlig'i",
-            "phone": "+375 (17) 270-53-77 (115), +375 29 112-73-48",
-            "email": "k.melnichenko@leangroup.by"
-        },
-        {
-            "name": "Ivanov Sergey",
-            "position": "Marketing bo'limi boshlig'i",
-            "phone": "+375 (17) 270-53-77 (210)",
-            "email": "s.ivanov@leangroup.by"
-        },
-        {
-            "name": "Petrova Anna",
-            "position": "Logistika bo'limi boshlig'i",
-            "phone": "+375 (17) 270-53-77 (415)",
-            "email": "a.petrova@leangroup.by"
-        },
-        {
-            "name": "Sidorov Pavel",
-            "position": "IT bo'limi boshlig'i",
-            "phone": "+375 (17) 270-53-77 (501)",
-            "email": "p.sidorov@leangroup.by"
-        }
-    ],
-    "team_section": {
-        "title": "Jamoa",
-        "button": "Barchasini ko'rish"
+  "team": [
+    {
+      "name": "Voynich Darya",
+      "position": "Sotuvlar bo'yicha direktor o'rinbosari",
+      "phone": "+375 (17) 270-53-77 (317)",
+      "email": ""
     },
-    "news_section": {
-        "title": "Yangiliklar",
-        "button": "Barcha yangiliklar"
+    {
+      "name": "Misko Yekaterina",
+      "position": "Kuzatuv bo'limi boshlig'i",
+      "phone": "+375 (17) 270-53-77 (115), +375 29 112-73-48",
+      "email": "k.melnichenko@leangroup.by"
+    },
+    {
+      "name": "Ivanov Sergey",
+      "position": "Marketing bo'limi boshlig'i",
+      "phone": "+375 (17) 270-53-77 (210)",
+      "email": "s.ivanov@leangroup.by"
+    },
+    {
+      "name": "Petrova Anna",
+      "position": "Logistika bo'limi boshlig'i",
+      "phone": "+375 (17) 270-53-77 (415)",
+      "email": "a.petrova@leangroup.by"
+    },
+    {
+      "name": "Sidorov Pavel",
+      "position": "IT bo'limi boshlig'i",
+      "phone": "+375 (17) 270-53-77 (501)",
+      "email": "p.sidorov@leangroup.by"
     }
+  ],
+  "team_section": {
+    "title": "Jamoa",
+    "button": "Barchasini ko'rish"
+  },
+  "news_section": {
+    "title": "Yangiliklar",
+    "button": "Barcha yangiliklar"
+  }
 }

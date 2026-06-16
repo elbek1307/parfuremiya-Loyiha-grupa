@@ -1,10 +1,33 @@
 {
-   "hero": {
-  "hero-titles": "LEANGROUP - tubes and labels",
-  "hero-title": "Laminate tubes",
-  "hero": "Used for toothpaste production. Widely applied in cosmetics, food industry, parapharmaceuticals, household chemicals, and DIY (Do-it-Yourself).",
-  "hero-btn": "Catalog"
-},"about": {
+     "nav": {
+    "logo_alt": "LeanGroup Logo",
+    "products": "Products",
+    "certificates": "Certificates",
+    "our_team": "Our Team",
+    "about": "About Us",
+    "news": "News",
+    "vacancies": "Vacancies",
+    "contacts": "Contacts",
+    "submenu": {
+      "laminate_tubes": "Laminate Tubes",
+      "extrusion_tubes": "Extrusion Tubes",
+      "other_packaging": "Other Packaging"
+    },
+    "lang": {
+      "en": "EN",
+      "ru": "RU",
+      "uz": "UZ"
+    }
+  },
+
+
+  "hero": {
+    "hero-titles": "LEANGROUP - tubes and labels",
+    "hero-title": "Laminate tubes",
+    "hero": "Used for toothpaste production. Widely applied in cosmetics, food industry, parapharmaceuticals, household chemicals, and DIY (Do-it-Yourself).",
+    "hero-btn": "Catalog"
+  },
+  "about": {
     "title_main": "About",
     "title_brand": "LEANGROUP",
     "p1": "LeanGroup LLC started its operations in 1999 and today is a leading company in the production of laminate and extrusion tubes.",
@@ -15,44 +38,44 @@
     "title_main": "Product quality is confirmed by",
     "title_brand": "certificates"
   },
-    "team": [
-        {
-            "name": "Voynich Darya",
-            "position": "Deputy Sales Director",
-            "phone": "+375 (17) 270-53-77 (317)",
-            "email": ""
-        },
-        {
-            "name": "Misko Ekaterina",
-            "position": "Head of Support Department",
-            "phone": "+375 (17) 270-53-77 (115), +375 29 112-73-48",
-            "email": "k.melnichenko@leangroup.by"
-        },
-        {
-            "name": "Ivanov Sergey",
-            "position": "Head of Marketing Department",
-            "phone": "+375 (17) 270-53-77 (210)",
-            "email": "s.ivanov@leangroup.by"
-        },
-        {
-            "name": "Petrova Anna",
-            "position": "Head of Logistics Department",
-            "phone": "+375 (17) 270-53-77 (415)",
-            "email": "a.petrova@leangroup.by"
-        },
-        {
-            "name": "Sidorov Pavel",
-            "position": "Head of IT Department",
-            "phone": "+375 (17) 270-53-77 (501)",
-            "email": "p.sidorov@leangroup.by"
-        }
-    ],
-    "team_section": {
-        "title": "Team",
-        "button": "View all"
+  "team": [
+    {
+      "name": "Voynich Darya",
+      "position": "Deputy Sales Director",
+      "phone": "+375 (17) 270-53-77 (317)",
+      "email": ""
     },
-    "news_section": {
-        "title": "News",
-        "button": "All news"
+    {
+      "name": "Misko Ekaterina",
+      "position": "Head of Support Department",
+      "phone": "+375 (17) 270-53-77 (115), +375 29 112-73-48",
+      "email": "k.melnichenko@leangroup.by"
+    },
+    {
+      "name": "Ivanov Sergey",
+      "position": "Head of Marketing Department",
+      "phone": "+375 (17) 270-53-77 (210)",
+      "email": "s.ivanov@leangroup.by"
+    },
+    {
+      "name": "Petrova Anna",
+      "position": "Head of Logistics Department",
+      "phone": "+375 (17) 270-53-77 (415)",
+      "email": "a.petrova@leangroup.by"
+    },
+    {
+      "name": "Sidorov Pavel",
+      "position": "Head of IT Department",
+      "phone": "+375 (17) 270-53-77 (501)",
+      "email": "p.sidorov@leangroup.by"
     }
+  ],
+  "team_section": {
+    "title": "Team",
+    "button": "View all"
+  },
+  "news_section": {
+    "title": "News",
+    "button": "All news"
+  }
 }
