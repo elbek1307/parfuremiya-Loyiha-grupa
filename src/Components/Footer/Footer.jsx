@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { FaVk, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import "./Footer.css";
-import logo from "../../assets/logo.png";
+import logo from "./logo.svg";
 
 const Footer = () => {
   const { t } = useTranslation();
