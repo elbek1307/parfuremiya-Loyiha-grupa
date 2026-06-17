@@ -2,21 +2,18 @@
   padding: 60px 0;
 }
 
-.polu_inner {
-  background-color: #f5f5f5;
+.polu_container {
   background-image: url("./polu_bg.png"); 
   background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 55% auto;
+  background-position: center;
+  background-size: cover;
+  background-color: #f5f5f5;
   border-radius: 16px;
   padding: 50px 60px;
   min-height: 360px;
+  box-shadow: 0px 0px 10px 0px black;
 }
 
-/* ===== CONTENT ===== */
-.polu_content {
-  max-width: 520px;
-}
 
 .polu_title {
   font-size: 32px;
@@ -24,6 +21,7 @@
   color: var(--text-color);
   margin-bottom: 12px;
   line-height: 1.3;
+  max-width: 520px;
 }
 
 .polu_title span {
@@ -46,10 +44,9 @@
   border: 1.5px dashed #ccc;
   border-radius: 10px;
   padding: 16px;
-  background-color: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(2px);
+  max-width: 520px;
+  background-color: rgba(255, 255, 255, 0.65);
 }
-
 
 .polu_row {
   display: flex;
@@ -64,8 +61,8 @@
   border-radius: 8px;
   padding: 0 14px;
   background: #ffffff;
-  transition: border-color 0.3s ease;
   width: 100%;
+  transition: border-color 0.3s ease;
 }
 
 .polu_input_wrap:focus-within {
@@ -141,9 +138,8 @@
 
 
 @media (max-width: 1024px) {
-  .polu_inner {
+  .polu_container {
     padding: 40px;
-    background-size: 50% auto;
   }
 
   .polu_title {
@@ -151,23 +147,27 @@
   }
 }
 
-
 @media (max-width: 768px) {
   .polu {
     padding: 40px 0;
   }
 
-  .polu_inner {
+  .polu_container {
     padding: 30px 20px;
-    background-image: none; 
-  }
-
-  .polu_content {
-    max-width: 100%;
+    background-position: right;
   }
 
   .polu_title {
     font-size: 22px;
+    max-width: 100%;
+  }
+
+  .polu_desc {
+    max-width: 100%;
+  }
+
+  .polu_form {
+    max-width: 100%;
   }
 
   .polu_row {
@@ -186,8 +186,9 @@
     font-size: 20px;
   }
 
-  .polu_inner {
+  .polu_container {
     padding: 24px 14px;
     border-radius: 10px;
+    background-image: none;
   }
 }

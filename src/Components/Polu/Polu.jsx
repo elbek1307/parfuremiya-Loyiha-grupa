@@ -5,7 +5,7 @@ import axios from "axios";
 import "./Polu.css";
 
 const Polu = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [ism, setIsm] = useState("");
   const [nomer, setNomer] = useState("");
   const [comment, setComment] = useState("");
@@ -41,61 +41,51 @@ const Polu = () => {
 
   return (
     <section className="polu">
-      <div className="container">
-        <div className="polu_inner">
+      <div className="container polu_container">
+        <h2 className="polu_title">
+          {t("polu.title_1")} <span>{t("polu.title_2")}</span>
+        </h2>
+        <p className="polu_desc">{t("polu.desc")}</p>
 
-          <div className="polu_content">
-            <h2 className="polu_title">
-              {t("polu.title_1")} <span>{t("polu.title_2")}</span>
-            </h2>
-            <p className="polu_desc">{t("polu.desc")}</p>
-
-            <form className="polu_form" onSubmit={sendMessege}>
-
-              {/* Ism + Nomer yonma-yon */}
-              <div className="polu_row">
-                <div className="polu_input_wrap">
-                  <FiUser className="polu_input_icon" />
-                  <input
-                    type="text"
-                    className="polu_input"
-                    placeholder={t("polu.name")}
-                    value={ism}
-                    onChange={(e) => setIsm(e.target.value)}
-                    required
-                  />
-                </div>
-
-                <div className="polu_input_wrap">
-                  <FiPhone className="polu_input_icon" />
-                  <input
-                    type="tel"
-                    className="polu_input"
-                    placeholder={t("polu.phone")}
-                    value={nomer}
-                    onChange={(e) => setNomer(e.target.value)}
-                    required
-                  />
-                </div>
-              </div>
-
-              {/* Textarea */}
-              <textarea
-                className="polu_textarea"
-                placeholder={t("polu.comment")}
-                rows={4}
-                value={comment}
-                onChange={(e) => setComment(e.target.value)}
+        <form className="polu_form" onSubmit={sendMessege}>
+          <div className="polu_row">
+            <div className="polu_input_wrap">
+              <FiUser className="polu_input_icon" />
+              <input
+                type="text"
+                className="polu_input"
+                placeholder={t("polu.name")}
+                value={ism}
+                onChange={(e) => setIsm(e.target.value)}
+                required
               />
+            </div>
 
-              <button type="submit" className="polu_btn">
-                {t("polu.btn")}
-              </button>
-
-            </form>
+            <div className="polu_input_wrap">
+              <FiPhone className="polu_input_icon" />
+              <input
+                type="tel"
+                className="polu_input"
+                placeholder={t("polu.phone")}
+                value={nomer}
+                onChange={(e) => setNomer(e.target.value)}
+                required
+              />
+            </div>
           </div>
 
-        </div>
+          <textarea
+            className="polu_textarea"
+            placeholder={t("polu.comment")}
+            rows={4}
+            value={comment}
+            onChange={(e) => setComment(e.target.value)}
+          />
+
+          <button type="submit" className="polu_btn">
+            {t("polu.btn")}
+          </button>
+        </form>
       </div>
     </section>
   );

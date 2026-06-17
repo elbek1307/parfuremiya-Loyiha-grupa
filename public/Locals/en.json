@@ -88,6 +88,16 @@
     "bottom_btn": "Go to catalog"
   },
 
+   "polu": {
+    "title_1": "Get detailed",
+    "title_2": "information",
+    "desc": "Simply fill out the form, our manager will contact you shortly",
+    "name": "Your name",
+    "phone": "+375 (29) 0000000",
+    "comment": "Comment",
+    "btn": "Get information"
+  },
+
   "footer": {
     "products": "Products",
     "laminate": "Laminate Tubes",

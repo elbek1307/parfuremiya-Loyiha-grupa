@@ -7,6 +7,7 @@ import Section_seven_farhod from './Components/Section_seven_farhod/Section_seve
 import Navbar from './Components/Navbar/Navbar'
 import Footer from './Components/Footer/Footer'
 import { Nash } from './Components/Nash/Nash'
+import Polu from './Components/Polu/Polu'
 
 
 
@@ -18,12 +19,15 @@ const App = () => {
     <header>
       <Navbar />
     </header>
-    <Hero/>
+     <main>
+       <Hero/>
     <SectionOne/>
     <SectionTwo/>
     <Nash />
+    <Polu />
     <Seaction_six_farhod/>
     <Section_seven_farhod/>
+     </main>
 
     <Footer />
     </>
