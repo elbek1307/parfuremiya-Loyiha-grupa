@@ -70,6 +70,16 @@
       "email": "p.sidorov@leangroup.by"
     }
   ],
+
+ "nash": {
+   "title": "Bizning",
+   "title_span": "mahsulotlar",
+   "btn1": "Laminat tubalar",
+   "btn2": "Ekstruzion tubalar",
+   "btn3": "Boshqa qadoqlar",
+   "bottom_btn": "Katalogga o'tish"
+},
+
   "team_section": {
     "title": "Jamoa",
     "button": "Barchasini ko'rish"

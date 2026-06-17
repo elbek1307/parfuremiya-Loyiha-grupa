@@ -1,5 +1,5 @@
 {
-     "nav": {
+  "nav": {
     "logo_alt": "LeanGroup Logo",
     "products": "Products",
     "certificates": "Certificates",
@@ -20,11 +20,11 @@
     }
   },
 
-
   "hero": {
     "hero-titles": "LEANGROUP - tubes and labels",
     "hero-title": "Laminate tubes",
-    "hero": "Used for toothpaste production. Widely applied in cosmetics, food industry, parapharmaceuticals, household chemicals, and DIY (Do-it-Yourself).",
+  
+    "hero-text": "Used for toothpaste production. Widely applied in cosmetics, food industry, parapharmaceuticals, household chemicals, and DIY (Do-it-Yourself).",
     "hero-btn": "Catalog"
   },
   "about": {
@@ -80,15 +80,13 @@
   },
 
   "nash": {
-   "title": "Наша",
-   "title_span": "продукция",
-   "btn1": "Ламинатные тубы",
-   "btn2": "Экструзионные тубы",
-   "btn3": "Другая упаковка",
-   "bottom_btn": "Перейти в каталог"
-    
+    "title": "Our",
+    "title_span": "products",
+    "btn1": "Laminated tubes",
+    "btn2": "Extrusion tubes",
+    "btn3": "Other packaging",
+    "bottom_btn": "Go to catalog"
   },
-
 
   "footer": {
     "products": "Products",

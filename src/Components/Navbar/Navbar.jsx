@@ -4,6 +4,8 @@ import { FiMenu, FiX, FiChevronDown } from "react-icons/fi";
 import "./Navbar.css";
 import logo from "./logo.svg";
 
+
+
 const Navbar = () => {
   const { t, i18n } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);

@@ -70,6 +70,17 @@
       "email": "p.sidorov@leangroup.by"
     }
   ],
+
+"nash": {
+   "title": "Наша",
+   "title_span": "продукция",
+   "btn1": "Ламинатные тубы",
+   "btn2": "Экструзионные тубы",
+   "btn3": "Другая упаковка",
+   "bottom_btn": "Перейти в каталог"
+    
+  },
+
   "team_section": {
     "title": "Команда",
     "button": "Смотреть все"
