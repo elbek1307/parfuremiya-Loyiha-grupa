@@ -20,12 +20,25 @@
     }
   },
 
-
-  "hero": {
-    "hero-titles": "LEANGROUP - tubalar va yorliqlar",
-    "hero-title": "Laminatlangan tubalar",
-    "hero-text": "Tish pastalari ishlab chiqarishda ishlatiladi. Kosmetika, oziq-ovqat sanoati, paratsevtika, maishiy kimyo va DIY (Do-it-Yourself — o'zingiz bajaring) sohalarida keng qo'llaniladi.",
-    "hero-btn": "Katalog"
+"hero": {
+    "slide1": {
+      "titles": "LEANGROUP - tubalar va etiketkalar",
+      "title": "Laminat tubalar",
+      "text": "Tish pastasi ishlab chiqarishda ishlatiladi. Kosmetika, oziq-ovqat sanoati, parafarsmevtika, maishiy kimyo va DIY (Do-It-Yourself) sohalarida keng qo'llaniladi.",
+      "btn": "Katalog"
+    },
+    "slide2": {
+      "titles": "LEANGROUP - bolalar uchun g'amxo'rlik",
+      "title": "Bolalar tubalari",
+      "text": "Bolalar tish pastalari va kremlari uchun eksklyuziv va xavfsiz tubalar. Eng kichkintoylar uchun yorqin dizayn va gipoallergen materiallar.",
+      "btn": "Katalog"
+    },
+    "slide3": {
+      "titles": "LEANGROUP - premium sifat",
+      "title": "Ekstruzion tubalar",
+      "text": "Kosmetik skrablar, niqoblar va yuz yuvish gellari uchun juda mos keladi. Sizning brendingiz uchun alohida chidamlilik va nafis ko'rinish.",
+      "btn": "Katalog"
+    }
   },
   "about": {
     "title_main": "Kompaniya haqida",

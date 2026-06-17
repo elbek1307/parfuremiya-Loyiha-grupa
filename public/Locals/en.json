@@ -19,13 +19,25 @@
       "uz": "UZ"
     }
   },
-
-
   "hero": {
-    "hero-titles": "LEANGROUP - tubes and labels",
-    "hero-title": "Laminate tubes",
-    "hero": "Used for toothpaste production. Widely applied in cosmetics, food industry, parapharmaceuticals, household chemicals, and DIY (Do-it-Yourself).",
-    "hero-btn": "Catalog"
+    "slide1": {
+      "titles": "LEANGROUP - tubes and labels",
+      "title": "Laminate tubes",
+      "text": "Used for toothpaste production. Widely applied in cosmetics, food industry, parapharmaceuticals, household chemicals, and DIY (Do-it-Yourself).",
+      "btn": "Catalog"
+    },
+    "slide2": {
+      "titles": "LEANGROUP - care for kids",
+      "title": "Tubes for children",
+      "text": "Exclusive and safe tubes for children's toothpastes and creams. Bright designs and hypoallergenic materials for the little ones.",
+      "btn": "Catalog"
+    },
+    "slide3": {
+      "titles": "LEANGROUP - premium quality",
+      "title": "Extrusion tubes",
+      "text": "Perfectly suitable for cosmetic scrubs, face masks, and cleansing gels. Exceptional durability and an elegant look for your brand.",
+      "btn": "Catalog"
+    }
   },
   "about": {
     "title_main": "About",

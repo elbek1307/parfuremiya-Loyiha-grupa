@@ -5,9 +5,11 @@ import SliderPackage from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaVk, FaFacebookF, FaLinkedinIn } from "react-icons/fa6";
-import heroi from "./img/heroi.jpg";
-import hero11 from "./img/hero11.jpg";
-import herro2 from "./img/herro2.jpg";
+
+// Eslatma: herro va herroo rasmlarining kengaytmasi (.png) yoki (.jpg) ekanligini papkangizdan aniqlab oling!
+import herro from "./img/herro.png";
+import splat from "./img/splat.png";
+import herroo from "./img/herroo.png";
 
 const Slider = SliderPackage.default || SliderPackage;
 
@@ -24,50 +26,61 @@ function Hero() {
     autoplaySpeed: 3000, 
   };
 
+  // Har bir slayd o'zining id raqami bilan tarjima faylidan (ru.json, uz.json, en.json) mos matnlarni tortadi
+  const slides = [
+    { img: herro, id: "slide1" },
+    { img: splat, id: "slide2" },
+    { img: herroo, id: "slide3" }
+  ];
+
   return (
     <div className="hero">
       <Slider {...settings}>
-        <div>
-          <div 
-            className="hero-slide-item first-slide"
-            style={{ backgroundImage: `url(${heroi})` }}
-          >
-            <div className="hero-overlay"></div>
-            <div className="container hero-flex-container">
-              <div className="hero-left-content">
-                <h6 className="hero-sub-subtitle">{t("hero.hero-titles") || "LEANGROUP - тубы и этикетка"}</h6>
-                <h1 className="hero-title">{t("hero.hero-title") || "Ламинатные тубы"}</h1>
-                <p className="hero-text">
-                  {t("hero.hero-text") || "Используются для производства зубных паст. Широко применяются в сегменте косметики, пищевой индустрии, парафармацевтике, бытовой химии и DIY (Do-It-Yourself)."}
-                </p> 
-                <button className="hero-btn">{t("hero.hero-btn") || "Каталог"}</button>
+        {slides.map((slide, index) => (
+          <div key={index}>
+            <div className="hero-slide-item">
+              
+              <div className="container hero-flex-container">
+                
+                {/* Chap taraf: Matnlar bloki */}
+                <div className="hero-left-content">
+                  <h6 className="hero-sub-subtitle">
+                    {t(`hero.${slide.id}.titles`)}
+                  </h6>
+                  <h1 className="hero-title">
+                    {t(`hero.${slide.id}.title`)}
+                  </h1>
+                  <p className="hero-text">
+                    {t(`hero.${slide.id}.text`)}
+                  </p> 
+                  <button className="hero-btn">
+                    {t(`hero.${slide.id}.btn`)}
+                  </button>
+                </div>
+
+                {/* O'ng taraf: Rasm bloki */}
+                <div className="hero-right-image-container">
+                  <img src={slide.img} alt="product design" className="hero-product-img" />
+                </div>
+
               </div>
-            </div>
-            <div className="hero-right-socials">
-              <a href="https://vk.com" target="_blank" rel="noreferrer" className="social-icon">
-                <FaVk />
-              </a>
-              <a href="https://facebook.com" target="_blank" rel="noreferrer" className="social-icon">
-                <FaFacebookF />
-              </a>
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="social-icon">
-                <FaLinkedinIn />
-              </a>
-            </div>
 
-          </div>
-        </div>
-        <div>
-          <div className="hero-slide-item standard-slide">
-            <img className="hero-full-width-img" src={hero11} alt="rasm" />
-          </div>
-        </div>
-        <div>
-          <div className="hero-slide-item standard-slide">
-            <img className="hero-full-width-img" src={herro2} alt="rasm" />
-          </div>
-        </div>
+              {/* Ijtimoiy tarmoqlar ikonalari — barchasi to'liq va xatosiz o'z joyida */}
+              <div className="hero-right-socials">
+                <a href="https://vk.com" target="_blank" rel="noreferrer" className="social-icon">
+                  <FaVk />
+                </a>
+                <a href="https://facebook.com" target="_blank" rel="noreferrer" className="social-icon">
+                  <FaFacebookF />
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="social-icon">
+                  <FaLinkedinIn />
+                </a>
+              </div>
 
+            </div>
+          </div>
+        ))}
       </Slider>
     </div>
   );
