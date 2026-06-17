@@ -118,6 +118,7 @@
   background-color: var(--main-color);
   border-style: solid;
   border-color: rgb(194, 96, 96);
+  color: white;
 }
 
 @media (max-width: 1150px) {

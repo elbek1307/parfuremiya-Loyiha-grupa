@@ -83,7 +83,7 @@ const Navbar = () => {
             </a>
           </li>
           <li className="nav_item">
-            <a href="#vacancies" className="nav_link">
+            <a href="#footer_contact" className="nav_link">
               {t("nav.vacancies")}
             </a>
           </li>

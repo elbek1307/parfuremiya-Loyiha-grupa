@@ -5,7 +5,7 @@ import './SectionOne.css';
 const SectionOne = () => {
   const { t } = useTranslation();
   
-  // Yangi yuborgan videongizning ID kodi joylashtirildi
+  
   const videoId = "Hbi13dX902c"; 
 
   return (
@@ -17,7 +17,7 @@ const SectionOne = () => {
         <div className="section-one-grid">
           
           <div className="section-one-video-wrapper">
-            {/* Saytni ochganda birdaniga pleyer turadi va YouTubega o'tib ketmaydi */}
+           
             <iframe
               className="section-one-iframe"
               src={`https://www.youtube.com/embed/${videoId}?rel=0&modestbranding=1`}
