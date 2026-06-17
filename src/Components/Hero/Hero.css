@@ -152,6 +152,26 @@
 .slick-prev, .slick-next {
   display: none !important;
 }
+
+.hero-slide-bg2{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/herobg2.png");
+  background-repeat: no-repeat;
+
+  background-size: cover;
+}
+.hero-slide-bg3{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/herobg3.png");
+  background-repeat: no-repeat;
+
+  background-size: cover;
+}
+
+.hero-title2, .hero-sub-subtitle2, .hero-text2{
+  color: white;
+}
+
+
+
 @media (max-width: 768px) {
   .hero-slide-item {
     height: 500px !important;

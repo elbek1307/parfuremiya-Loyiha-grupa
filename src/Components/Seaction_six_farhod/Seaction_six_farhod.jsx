@@ -14,7 +14,7 @@ const Seaction_six_farhod = () => {
   ];
 
   return (
-    <div className="team-container">
+    <div className="team-container" id='team-cont'>
       <h2 className="team-title">{t("team_section.title")}</h2>
 
       <div className="team-grid">

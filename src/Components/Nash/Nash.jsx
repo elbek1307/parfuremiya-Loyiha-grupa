@@ -6,7 +6,6 @@ import nash2 from "./nash2.png"
 import nash3 from "./nash3.png"
 import nash4 from "./nash4.png"
 import nash5 from "./nash5.png"
-// Duplicate React import removed from here
 import { useTranslation } from 'react-i18next'
 
 export const Nash = () => {
@@ -15,7 +14,7 @@ export const Nash = () => {
 
   return (
    <>
-   <section className="nash">
+   <section className="nash" id='nash_products'>
     <div className="container">
         <h2 className="nash_title">{t("nash.title")} <span>{t("nash.title_span")}</span></h2>
         <div className="nash_buttons">

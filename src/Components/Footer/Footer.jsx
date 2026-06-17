@@ -8,7 +8,7 @@ const Footer = () => {
   const { t, i18n } = useTranslation();
 
   return (
-    <footer className="footer">
+    <footer className="footer" id="footer_contact">
       <div className="container">
 
        
