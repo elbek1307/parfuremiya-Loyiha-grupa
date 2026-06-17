@@ -1,43 +1,80 @@
+import { useTranslation } from "react-i18next";
+import "./Hero.css";
 import React from 'react';
-import { useTranslation } from 'react-i18next';
-import './SectionOne.css';
+import SliderPackage from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { FaVk, FaFacebookF, FaLinkedinIn } from "react-icons/fa6";
+import herro from "./img/herro.png";
+import splat from "./img/splat.png";
+import herroo from "./img/herroo.png";
 
-const SectionOne = () => {
+const Slider = SliderPackage.default || SliderPackage;
+
+function Hero() {
   const { t } = useTranslation();
   
-  // Yangi yuborgan videongizning ID kodi joylashtirildi
-  const videoId = "Hbi13dX902c"; 
+  const settings = {
+    dots: true,
+    speed: 800,         
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000, 
+  };
+  const slides = [
+    { img: herro, id: "slide1" },
+    { img: splat, id: "slide2" },
+    { img: herroo, id: "slide3" }
+  ];
 
   return (
-    <section className="section-one" id="sectionOne">
-      <div className="section-one-container">
-        <h2 className="section-one-title">
-          {t('about.title_main')} <span className="section-one-brand">{t('about.title_brand')}</span>
-        </h2>
-        <div className="section-one-grid">
-          
-          <div className="section-one-video-wrapper">
-            {/* Saytni ochganda birdaniga pleyer turadi va YouTubega o'tib ketmaydi */}
-            <iframe
-              className="section-one-iframe"
-              src={`https://www.youtube.com/embed/${videoId}?rel=0&modestbranding=1`}
-              title="LeanGroup Corporate Video"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
-          </div>
+    <div className="hero">
+      <Slider {...settings}>
+        {slides.map((slide, index) => (
+          <div key={index}>
+            <div className="hero-slide-item">
+              
+              <div className="container hero-flex-container">
+                <div className="hero-left-content">
+                  <h6 className="hero-sub-subtitle">
+                    {t(`hero.${slide.id}.titles`)}
+                  </h6>
+                  <h1 className="hero-title">
+                    {t(`hero.${slide.id}.title`)}
+                  </h1>
+                  <p className="hero-text">
+                    {t(`hero.${slide.id}.text`)}
+                  </p> 
+                  <button className="hero-btn">
+                    {t(`hero.${slide.id}.btn`)}
+                  </button>
+                </div>
 
-          <div className="section-one-text-wrapper">
-            <p className="section-one-p">{t('about.p1')}</p>
-            <p className="section-one-p">{t('about.p2')}</p>
-            <p className="section-one-p">{t('about.p3')}</p>
-          </div>
+                <div className="hero-right-image-container">
+                  <img src={slide.img} alt="product design" className="hero-product-img" />
+                </div>
 
-        </div>
-      </div>
-    </section>
+              </div>
+              <div className="hero-right-socials">
+                <a href="https://vk.com" target="_blank" rel="noreferrer" className="social-icon">
+                  <FaVk />
+                </a>
+                <a href="https://facebook.com" target="_blank" rel="noreferrer" className="social-icon">
+                  <FaFacebookF />
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="social-icon">
+                  <FaLinkedinIn />
+                </a>
+              </div>
+
+            </div>
+          </div>
+        ))}
+      </Slider>
+    </div>
   );
-};
+}
 
-export default SectionOne;
+export default Hero;
