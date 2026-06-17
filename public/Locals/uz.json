@@ -83,6 +83,26 @@
       "email": "p.sidorov@leangroup.by"
     }
   ],
+
+ "nash": {
+   "title": "Bizning",
+   "title_span": "mahsulotlar",
+   "btn1": "Laminat tubalar",
+   "btn2": "Ekstruzion tubalar",
+   "btn3": "Boshqa qadoqlar",
+   "bottom_btn": "Katalogga o'tish"
+},
+
+ "polu": {
+    "title_1": "Batafsil",
+    "title_2": "ma'lumot olish",
+    "desc": "Shunchaki formani to'ldiring, menejerimiz siz bilan tez orada bog'lanadi",
+    "name": "Ismingiz",
+    "phone": "+998 (99) 0000000",
+    "comment": "Izoh",
+    "btn": "Ma'lumot olish"
+  },
+
   "team_section": {
     "title": "Jamoa",
     "button": "Barchasini ko'rish"

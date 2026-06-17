@@ -1,5 +1,5 @@
 {
-     "nav": {
+  "nav": {
     "logo_alt": "LeanGroup Logo",
     "products": "Products",
     "certificates": "Certificates",
@@ -92,15 +92,23 @@
   },
 
   "nash": {
-   "title": "Наша",
-   "title_span": "продукция",
-   "btn1": "Ламинатные тубы",
-   "btn2": "Экструзионные тубы",
-   "btn3": "Другая упаковка",
-   "bottom_btn": "Перейти в каталог"
-    
+    "title": "Our",
+    "title_span": "products",
+    "btn1": "Laminated tubes",
+    "btn2": "Extrusion tubes",
+    "btn3": "Other packaging",
+    "bottom_btn": "Go to catalog"
   },
 
+   "polu": {
+    "title_1": "Get detailed",
+    "title_2": "information",
+    "desc": "Simply fill out the form, our manager will contact you shortly",
+    "name": "Your name",
+    "phone": "+375 (29) 0000000",
+    "comment": "Comment",
+    "btn": "Get information"
+  },
 
   "footer": {
     "products": "Products",

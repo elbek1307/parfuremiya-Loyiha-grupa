@@ -4,6 +4,8 @@ import { FiMenu, FiX, FiChevronDown } from "react-icons/fi";
 import "./Navbar.css";
 import logo from "./logo.svg";
 
+
+
 const Navbar = () => {
   const { t, i18n } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
@@ -28,7 +30,8 @@ const Navbar = () => {
 
         <ul className={`nav_list${menuOpen ? " nav_list--open" : ""}`}>
           <li className="nav_item">
-            <button
+            <a href="#nash_products">
+              <button
               className="nav_link"
               onClick={() => setSubmenuOpen((p) => !p)}
             >
@@ -41,7 +44,7 @@ const Navbar = () => {
 
             <ul className={`nav_submenu${submenuOpen ? " nav_submenu--open" : ""}`}>
               <li>
-                <a href="#laminate" className="nav_sublink">
+                <a href="#nash_products" className="nav_sublink">
                   {t("nav.submenu.laminate_tubes")}
                 </a>
               </li>
@@ -56,25 +59,26 @@ const Navbar = () => {
                 </a>
               </li>
             </ul>
+            </a>
           </li>
 
           <li className="nav_item">
-            <a href="#certificates" className="nav_link">
+            <a href="#sectionTwo" className="nav_link">
               {t("nav.certificates")}
             </a>
           </li>
           <li className="nav_item">
-            <a href="#team" className="nav_link">
+            <a href="#team-cont" className="nav_link">
               {t("nav.our_team")}
             </a>
           </li>
           <li className="nav_item">
-            <a href="#about" className="nav_link">
+            <a href="#sectionOne" className="nav_link">
               {t("nav.about")}
             </a>
           </li>
           <li className="nav_item">
-            <a href="#news" className="nav_link">
+            <a href="#news_cont" className="nav_link">
               {t("nav.news")}
             </a>
           </li>
@@ -84,7 +88,7 @@ const Navbar = () => {
             </a>
           </li>
           <li className="nav_item">
-            <a href="#contacts" className="nav_link">
+            <a href="#footer_contact" className="nav_link">
               {t("nav.contacts")}
             </a>
           </li>

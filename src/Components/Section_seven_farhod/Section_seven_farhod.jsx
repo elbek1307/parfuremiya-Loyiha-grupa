@@ -27,7 +27,7 @@ const Section_seven_farhod = () => {
   ];
 
   return (
-    <div className="news-container">
+    <div className="news-container" id='news_cont'>
       <h2 className="news-title">{t("news_section.title")}</h2>
 
       <div className="news-grid">

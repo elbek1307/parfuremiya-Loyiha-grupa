@@ -174,71 +174,22 @@
   display: none !important;
 }
 
-/* Mobil qurilmalar (Responsive) */
-@media (max-width: 768px) {
-  .hero-slide-item {
-    height: auto !important;
-    padding: 40px 0 80px 0;
-  }
+.hero-slide-bg2{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/herobg2.png");
+  background-repeat: no-repeat;
 
-  .hero .hero-flex-container {
-    flex-direction: column-reverse; 
-    justify-content: center;
-    align-items: center;
-  }
-
-  .hero-left-content {
-    flex: 0 0 100%;
-    max-width: 100%;
-    text-align: center;
-    padding: 0 10px;
-    margin-top: 30px;
-  }
-
-  .hero-right-image-container {
-    flex: 0 0 100%;
-    width: 100%;
-    height: 250px;
-  }
-
-  .hero-product-img {
-    max-height: 240px;
-    -webkit-mask-image: none;
-    mask-image: none;
-  }
-
-  .hero-title {
-    font-size: 28px;
-    margin: 0 0 12px 0;
-  }
-
-  .hero-text {
-    font-size: 14px;
-    margin: 0 0 20px 0;
-  }
-
-  .hero-btn {
-    width: 80%;
-    margin: 0 auto;
-    display: block;
-  }
-
-  .hero-right-socials {
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: auto;
-    bottom: 45px;
-    transform: none;
-    flex-direction: row;
-    justify-content: center;
-    gap: 25px;
-  }
-
-  .slick-dots {
-    left: 0 !important;
-    right: 0 !important;
-    text-align: center !important;
-    bottom: 10px !important;
-  }
+  background-size: cover;
 }
+.hero-slide-bg3{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/herobg3.png");
+  background-repeat: no-repeat;
+
+  background-size: cover;
+}
+
+.hero-title2, .hero-sub-subtitle2, .hero-text2{
+  color: white;
+}
+
+
+
