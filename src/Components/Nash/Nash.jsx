@@ -25,7 +25,7 @@ export const Nash = () => {
             {t("nash.title")} <span>{t("nash.title_span")}</span>
           </h2>
 
-          {/* 1. Tugmalar Swiper-i */}
+        
           <Swiper
             className="nash_buttons_swiper"
             modules={[FreeMode, Scrollbar]} 
@@ -56,21 +56,21 @@ export const Nash = () => {
             </SwiperSlide>
           </Swiper>
 
-          {/* 2. Rasmlar (Cardlar) Swiper-i */}
+         
           <Swiper
             className="nash_img_swiper"
-            modules={[FreeMode, Scrollbar]} // <-- Bu yerga ham Scrollbar qo'shildi
+            modules={[FreeMode, Scrollbar]} 
             freeMode={true}
             spaceBetween={40}
             slidesPerView={5}
             resistanceRatio={0}
-            scrollbar={{ draggable: true }} // <-- Cardlar uchun scrollbar faollashtirildi
+            scrollbar={{ draggable: true }} 
             breakpoints={{
               0: { slidesPerView: 1.6, spaceBetween: 16 },
               480: { slidesPerView: 2.3, spaceBetween: 20 },
               768: { slidesPerView: 3.2, spaceBetween: 24 },
               1024: { slidesPerView: 4, spaceBetween: 30 },
-              1280: { slidesPerView: 5, spaceBetween: 40, scrollbar: false }, // <-- To'liq sig'ganda chiziq o'chadi
+              1280: { slidesPerView: 5, spaceBetween: 40, scrollbar: false }, 
             }}
           >
             <SwiperSlide className="nash_img_item">

@@ -1,5 +1,5 @@
 {
-     "nav": {
+  "nav": {
     "logo_alt": "LeanGroup Logotipi",
     "products": "Mahsulotlar",
     "certificates": "Sertifikatlar",
@@ -19,8 +19,7 @@
       "uz": "UZ"
     }
   },
-
-"hero": {
+  "hero": {
     "slide1": {
       "titles": "LEANGROUP - tubalar va etiketkalar",
       "title": "Laminat tubalar",
@@ -50,6 +49,10 @@
   "sectionTwo": {
     "title_main": "Mahsulot sifatini tasdiqlaydi",
     "title_brand": "sertifikatlar"
+  },
+  "team_section": {
+    "title": "Jamoa",
+    "button": "Barchasini ko'rish"
   },
   "team": [
     {
@@ -83,17 +86,15 @@
       "email": "p.sidorov@leangroup.by"
     }
   ],
-
- "nash": {
-   "title": "Bizning",
-   "title_span": "mahsulotlar",
-   "btn1": "Laminat tubalar",
-   "btn2": "Ekstruzion tubalar",
-   "btn3": "Boshqa qadoqlar",
-   "bottom_btn": "Katalogga o'tish"
-},
-
- "polu": {
+  "nash": {
+    "title": "Bizning",
+    "title_span": "mahsulotlar",
+    "btn1": "Laminat tubalar",
+    "btn2": "Ekstruzion tubalar",
+    "btn3": "Boshqa qadoqlar",
+    "bottom_btn": "Katalogga o'tish"
+  },
+  "polu": {
     "title_1": "Batafsil",
     "title_2": "ma'lumot olish",
     "desc": "Shunchaki formani to'ldiring, menejerimiz siz bilan tez orada bog'lanadi",
@@ -102,17 +103,28 @@
     "comment": "Izoh",
     "btn": "Ma'lumot olish"
   },
-
-  "team_section": {
-    "title": "Jamoa",
+  "news_section": {
+    "title": "So'nggi <span>Yangiliklar</span>",
     "button": "Barchasini ko'rish"
   },
-  "news_section": {
-    "title": "Yangiliklar",
-    "button": "Barcha yangiliklar"
-  },
-
-   "footer": {
+  "news": [
+    {
+      "id": 1,
+      "date": "28.01.2022",
+      "title": "\"LeanGroup\" EcoVadis kumush medali sovrindori!"
+    },
+    {
+      "id": 2,
+      "date": "21.01.2022",
+      "title": "\"LeanGroup\" PRODEXPO-2022 ko'rgazmasida!"
+    },
+    {
+      "id": 3,
+      "date": "16.12.2021",
+      "title": "Tuba qadoqlash turi sifatida"
+    }
+  ],
+  "footer": {
     "products": "Mahsulotlar",
     "laminate": "Laminat trubalar",
     "extrusion": "Ekstruzion trubalar",
@@ -129,7 +141,7 @@
     "europe": "Yevropa",
     "moscow": "Moskva",
     "ekaterinburg": "Yekaterinburg",
-    "copy": "© 2022 Leangroup. All Rights Reserved.",
+    "copy": "© 2022 Leangroup. Barcha huquqlar himoyalangan.",
     "dev": "Saytni ishlab chiqish va ilgari surish SkyWeb.by"
   }
 }

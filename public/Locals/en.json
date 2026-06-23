@@ -9,9 +9,9 @@
     "vacancies": "Vacancies",
     "contacts": "Contacts",
     "submenu": {
-      "laminate_tubes": "Laminate Tubes",
-      "extrusion_tubes": "Extrusion Tubes",
-      "other_packaging": "Other Packaging"
+      "laminate_tubes": "Laminate tubes",
+      "extrusion_tubes": "Extrusion tubes",
+      "other_packaging": "Other packaging"
     },
     "lang": {
       "en": "EN",
@@ -23,98 +23,112 @@
     "slide1": {
       "titles": "LEANGROUP - tubes and labels",
       "title": "Laminate tubes",
-      "text": "Used for toothpaste production. Widely applied in cosmetics, food industry, parapharmaceuticals, household chemicals, and DIY (Do-it-Yourself).",
+      "text": "Used for the production of toothpaste. Widely used in cosmetics, food industry, parapharmaceuticals, household chemicals, and DIY (Do-It-Yourself) sectors.",
       "btn": "Catalog"
     },
     "slide2": {
       "titles": "LEANGROUP - care for kids",
-      "title": "Tubes for children",
-      "text": "Exclusive and safe tubes for children's toothpastes and creams. Bright designs and hypoallergenic materials for the little ones.",
+      "title": "Children's tubes",
+      "text": "Exclusive and safe tubes for children's toothpastes and creams. Bright design and hypoallergenic materials for the little ones.",
       "btn": "Catalog"
     },
     "slide3": {
       "titles": "LEANGROUP - premium quality",
       "title": "Extrusion tubes",
-      "text": "Perfectly suitable for cosmetic scrubs, face masks, and cleansing gels. Exceptional durability and an elegant look for your brand.",
+      "text": "Ideal for cosmetic scrubs, masks, and facial cleansing gels. Exceptional durability and elegant appearance for your brand.",
       "btn": "Catalog"
     }
   },
   "about": {
-    "title_main": "About",
+    "title_main": "About the company",
     "title_brand": "LEANGROUP",
-    "p1": "LeanGroup LLC started its operations in 1999 and today is a leading company in the production of laminate and extrusion tubes.",
-    "p2": "Having two technologies - for the production of laminate and extrusion tubes, we offer you a wide range of possibilities. A great advantage is our own printing shop in laminate and in-line printing in extrusion with the possibility of various additional decor options. Special attention is paid to working with suppliers to control and maintain the quality of our products.",
-    "p3": "Since January 2018, the company has become a member of the European Tube Manufacturers Association (ETMA), which confirms the strong position of the brand in the European market."
+    "p1": "LeanGroup LLC began its activities in 1999 and today is a leading company in the production of laminate and extrusion tubes.",
+    "p2": "Having two technologies for the production of laminate and extrusion tubes, we offer you a wide range of possibilities. A great advantage is our own printing shop in laminate and in-line printing in extrusion with various additional decoration options. Special attention is paid to working with suppliers to control and maintain the quality of our products.",
+    "p3": "Since January 2018, the company has become a member of the European Tube Manufacturers Association (ETMA), which confirms the brand's strong position in the European market as well."
   },
   "sectionTwo": {
     "title_main": "Product quality is confirmed by",
     "title_brand": "certificates"
   },
+  "team_section": {
+    "title": "Our Team",
+    "button": "View all"
+  },
   "team": [
     {
-      "name": "Voynich Darya",
+      "name": "Darya Voynich",
       "position": "Deputy Sales Director",
       "phone": "+375 (17) 270-53-77 (317)",
       "email": ""
     },
     {
-      "name": "Misko Ekaterina",
+      "name": "Yekaterina Misko",
       "position": "Head of Support Department",
       "phone": "+375 (17) 270-53-77 (115), +375 29 112-73-48",
       "email": "k.melnichenko@leangroup.by"
     },
     {
-      "name": "Ivanov Sergey",
+      "name": "Sergey Ivanov",
       "position": "Head of Marketing Department",
       "phone": "+375 (17) 270-53-77 (210)",
       "email": "s.ivanov@leangroup.by"
     },
     {
-      "name": "Petrova Anna",
+      "name": "Anna Petrova",
       "position": "Head of Logistics Department",
       "phone": "+375 (17) 270-53-77 (415)",
       "email": "a.petrova@leangroup.by"
     },
     {
-      "name": "Sidorov Pavel",
+      "name": "Pavel Sidorov",
       "position": "Head of IT Department",
       "phone": "+375 (17) 270-53-77 (501)",
       "email": "p.sidorov@leangroup.by"
     }
   ],
-  "team_section": {
-    "title": "Team",
-    "button": "View all"
-  },
-  "news_section": {
-    "title": "News",
-    "button": "All news"
-  },
-
   "nash": {
     "title": "Our",
     "title_span": "products",
-    "btn1": "Laminated tubes",
+    "btn1": "Laminate tubes",
     "btn2": "Extrusion tubes",
     "btn3": "Other packaging",
     "bottom_btn": "Go to catalog"
   },
-
-   "polu": {
-    "title_1": "Get detailed",
-    "title_2": "information",
-    "desc": "Simply fill out the form, our manager will contact you shortly",
-    "name": "Your name",
-    "phone": "+375 (29) 0000000",
+  "polu": {
+    "title_1": "Get",
+    "title_2": "detailed information",
+    "desc": "Just fill out the form, and our manager will contact you shortly",
+    "name": "Your Name",
+    "phone": "+1 (000) 000-0000",
     "comment": "Comment",
-    "btn": "Get information"
+    "btn": "Get info"
   },
-
+  "news_section": {
+    "title": "Latest <span>News</span>",
+    "button": "See all"
+  },
+  "news": [
+    {
+      "id": 1,
+      "date": "28.01.2022",
+      "title": "\"LeanGroup\" is an EcoVadis silver medalist!"
+    },
+    {
+      "id": 2,
+      "date": "21.01.2022",
+      "title": "\"LeanGroup\" at the PRODEXPO-2022 exhibition!"
+    },
+    {
+      "id": 3,
+      "date": "16.12.2021",
+      "title": "Tube as a type of packaging"
+    }
+  ],
   "footer": {
     "products": "Products",
-    "laminate": "Laminate Tubes",
-    "extrusion": "Extrusion Tubes",
-    "other": "Other Packaging",
+    "laminate": "Laminate tubes",
+    "extrusion": "Extrusion tubes",
+    "other": "Other packaging",
     "company": "Company",
     "about": "About Us",
     "team": "Our Team",
@@ -126,8 +140,8 @@
     "belarus": "Belarus",
     "europe": "Europe",
     "moscow": "Moscow",
-    "ekaterinburg": "Ekaterinburg",
+    "ekaterinburg": "Yekaterinburg",
     "copy": "© 2022 Leangroup. All Rights Reserved.",
-    "dev": "Website development and promotion by SkyWeb.by"
+    "dev": "Website development and promotion SkyWeb.by"
   }
 }
