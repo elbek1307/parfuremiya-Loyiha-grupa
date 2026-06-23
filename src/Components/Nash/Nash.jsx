@@ -9,9 +9,10 @@ import nash5 from "./nash5.png";
 import { useTranslation } from "react-i18next";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode } from "swiper/modules";
+import { FreeMode, Scrollbar } from "swiper/modules"; 
 import "swiper/css";
 import "swiper/css/free-mode";
+import "swiper/css/scrollbar"; 
 
 export const Nash = () => {
   const { t, i18n } = useTranslation();
@@ -24,13 +25,15 @@ export const Nash = () => {
             {t("nash.title")} <span>{t("nash.title_span")}</span>
           </h2>
 
+          {/* 1. Tugmalar Swiper-i */}
           <Swiper
             className="nash_buttons_swiper"
-            modules={[FreeMode]}
+            modules={[FreeMode, Scrollbar]} 
             freeMode={true} 
             slidesPerView="auto" 
             spaceBetween={12}
             resistanceRatio={0}
+            scrollbar={{ draggable: true }} 
             breakpoints={{
               768: {
                 slidesPerView: 3,
@@ -38,6 +41,7 @@ export const Nash = () => {
                 freeMode: false,
                 allowTouchMove: false,
                 centerInsufficientSlides: true,
+                scrollbar: false, 
               },
             }}
           >
@@ -52,19 +56,21 @@ export const Nash = () => {
             </SwiperSlide>
           </Swiper>
 
+          {/* 2. Rasmlar (Cardlar) Swiper-i */}
           <Swiper
             className="nash_img_swiper"
-            modules={[FreeMode]}
+            modules={[FreeMode, Scrollbar]} // <-- Bu yerga ham Scrollbar qo'shildi
             freeMode={true}
             spaceBetween={40}
             slidesPerView={5}
             resistanceRatio={0}
+            scrollbar={{ draggable: true }} // <-- Cardlar uchun scrollbar faollashtirildi
             breakpoints={{
               0: { slidesPerView: 1.6, spaceBetween: 16 },
               480: { slidesPerView: 2.3, spaceBetween: 20 },
               768: { slidesPerView: 3.2, spaceBetween: 24 },
               1024: { slidesPerView: 4, spaceBetween: 30 },
-              1280: { slidesPerView: 5, spaceBetween: 40 },
+              1280: { slidesPerView: 5, spaceBetween: 40, scrollbar: false }, // <-- To'liq sig'ganda chiziq o'chadi
             }}
           >
             <SwiperSlide className="nash_img_item">
