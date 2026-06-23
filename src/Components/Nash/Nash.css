@@ -24,21 +24,8 @@
     margin: 30px 0;
 }
 
-.nash_buttons_swiper .swiper-wrapper{
-    justify-content: center;
-}
-
-@media (min-width: 768px){
-    .nash_buttons_swiper .swiper-wrapper{
-        transform: none !important;
-    }
-}
-
 .nash_buttons_slide{
     width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .nash_btn{
@@ -49,6 +36,8 @@
     background-color: white;
     transition: all 0.3s;
     white-space: nowrap;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    display: inline-block;
 }
 
 .nash_btn:hover{
