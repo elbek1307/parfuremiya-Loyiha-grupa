@@ -30,8 +30,7 @@ const Navbar = () => {
 
         <ul className={`nav_list${menuOpen ? " nav_list--open" : ""}`}>
           <li className="nav_item">
-            <a href="#nash_products">
-              <button
+            <button
               className="nav_link"
               onClick={() => setSubmenuOpen((p) => !p)}
             >
@@ -59,7 +58,6 @@ const Navbar = () => {
                 </a>
               </li>
             </ul>
-            </a>
           </li>
 
           <li className="nav_item">

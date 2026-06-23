@@ -220,9 +220,11 @@
     border-top: 1px solid #f5f5f5;
     padding: 0;
     transform: none;
+    display: none;
   }
 
   .nav_submenu--open {
+    display: block;
     opacity: 1;
     visibility: visible;
     pointer-events: all;
