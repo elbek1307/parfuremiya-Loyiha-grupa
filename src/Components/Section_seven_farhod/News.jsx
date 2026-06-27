@@ -11,12 +11,12 @@ import img2 from "./seven (2).jpg";
 import img3 from "./seven (3).jpg";
 
 
-import "./Section_seven_farhod.css";
+import "./News.css";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/scrollbar";
 
-const Section_seven_farhod = () => {
+const News = () => {
   const { t, i18n } = useTranslation();
 
 
@@ -78,4 +78,4 @@ const Section_seven_farhod = () => {
   );
 };
 
-export default Section_seven_farhod;
+export default News;

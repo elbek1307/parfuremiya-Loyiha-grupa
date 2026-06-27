@@ -3,17 +3,24 @@ import { useTranslation } from 'react-i18next';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Scrollbar } from "swiper/modules";
 
-
-
-import "./Seaction_six_farhod.css";
+import "./Team.css";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/scrollbar";
 
-const Seaction_six_farhod = () => {
-  const { t, i18n } = useTranslation();
 
+import team1 from "./img/1.jpg";
+import team2 from "./img/2.jpg";
+import team3 from "./img/3.jpg";
+import team4 from "./img/4.jpg";
+import team5 from "./img/5.jpg";
+
+const Team = () => {
+  const { t } = useTranslation();
   const teamMembers = t("team", { returnObjects: true });
+
+  
+  const teamImages = [team1, team2, team3, team4, team5];
 
   return (
     <div className="team-container" id='team-cont'>
@@ -44,11 +51,11 @@ const Seaction_six_farhod = () => {
           },
         }}
       >
-     
         {Array.isArray(teamMembers) && teamMembers.map((member, index) => (
           <SwiperSlide key={index} className="team-card">
             <div className="image-wrapper">
-              <img src={`src/Components/Seaction_six_farhod/img/${index + 1}.jpg`} alt={member.name} />
+             
+              <img src={teamImages[index]} alt={member.name} />
             </div>
             
             <span className="member-name">{member.name}</span>
@@ -73,4 +80,4 @@ const Seaction_six_farhod = () => {
   );
 };
 
-export default Seaction_six_farhod;
+export default Team;
